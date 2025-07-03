@@ -1,0 +1,10 @@
+h1{
+    background-color: azure;
+}
+
+p{
+    background-image: url("/image/image1.png");
+    background-repeat: no-repeat;
+}
+
+
