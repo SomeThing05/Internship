@@ -37,6 +37,11 @@ img{
     object-fit: cover;
     display: block;
 }
+
+.nav-bar{
+    padding: 26px;
+}
+
 .logo{
     max-width:274px; 
     
@@ -65,7 +70,6 @@ img{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:26px;
     
 }
 
