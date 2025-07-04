@@ -65,8 +65,8 @@ img{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-top:26px;
-    padding-bottom: 26px;
+    padding:26px;
+    
 }
 
 .nav-links{
@@ -74,10 +74,18 @@ img{
     list-style-type: none;
     gap: 41px;
     margin-right: 20px;
-    font-size:17px;
+    font-size:14px;
     font-family:var(--roboto-font);
     color:var(--blue);
     font-weight: bold;
+    align-items: center;
+}
+.get-btn{
+    padding:15px 20px 15px 20px;
+    border: 1px solid #EBEBEB;
+    background-color: var(--grey1);
+    border-radius: 30px;
+    
 }
 
 
