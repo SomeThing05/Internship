@@ -1,60 +1,201 @@
+/* home-page */
 /* nav-bar  */
-@media(max-width :1020px){
-    .nav-toggle-label{
-        display: block;
-    }
+@media (max-width: 1020px) {
+  .nav-toggle-label {
+    display: block;
+  }
 
-    .nav-links {
-        flex-direction: column;
-        background-color: #ffffff;
-        position: absolute;
-        top: 113px;
-        right: 0;
-        left: 0;
-        width: 100%;
-        display: none;
-    }
-    .get-btn{
-        border: none;
-        background-color: #ffffff;
-        padding:0px;
-    }
+  .nav-links {
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 113px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
 
+  .get-btn {
+    border: none;
+    background-color: #ffffff;
+    padding: 0px;
+  }
 
-    .nav-links li {
-        padding: 15px;
-        text-align: center;
-    }
+  .nav-links li {
+    padding: 15px;
+    text-align: center;
+  }
 
-    .nav-toggle:checked + .nav-toggle-label + .nav-links {
-        display: flex;
-    }
-}
-    
-@media(max-width:940px){
-    .home-ourProcess{
-        height:1300px;
-        position: static;
-    }
-    .ourProcess-content{
-        flex-direction: column-reverse;
-        
-    }
-
-    .ourProcess-content .left{
-        width:100%;
-        
-        
-        position: static;
-    }
-
-    .ourProcess-content .right{
-        
-        width:100%;
-        top: 0px;
-       height: 420px;
-        position: static; 
-    }
+  .nav-toggle:checked + .nav-toggle-label + .nav-links {
+    display: flex;
+  }
 }
 
+/* home-ourProcess */
 
+@media (max-width: 940px) {
+  .home-ourProcess {
+    height: 1100px;
+    position: static;
+  }
+
+  .ourProcess-content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  .ourProcess-content .left {
+    width: 100%;
+    position: static;
+  }
+
+  .ourProcess-content .right {
+    width: 100%;
+    top: 0px;
+    height: 420px;
+    position: static;
+  }
+
+  .ourProcess-content .left .left-content .heading2 {
+    margin-top: 50px;
+  }
+
+  .ourProcess-content .left .left-content .accordion {
+    margin-top: 65px;
+  }
+}
+
+/* footer */
+
+@media (max-width: 760px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-grid .card3 {
+    max-width: 150px;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .footer-grid .card1 {
+    gap: 50px;
+  }
+
+  .add {
+    margin-top: 0px;
+  }
+
+  .add-link {
+    margin-top: 0px;
+  }
+
+  .mo-no {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .welcome img {
+    position: static;
+    height: 406px;
+  }
+
+  .welcome-content {
+    position: static;
+    padding: 51px;
+  }
+
+  .welcome-content .heading1 {
+    color: #707070;
+  }
+
+  .welcome-content .heading2 {
+    color: var(--blue);
+    font-size: 40px;
+  }
+
+  .welcome-content .btn2 {
+    color: var(--blue);
+  }
+
+  .slide-content {
+    font-size: 30px;
+  }
+
+  .aboutMeditation-content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .home-caseStudies .container .caseStudies-content .case-grid {
+    padding-bottom: 80px;
+  }
+}
+
+/* .WIM */
+
+/* .WIM-aboutMeditation  */
+@media (max-width: 960px) {
+  .WIM-aboutMeditation {
+    position: static;
+    height: auto;
+  }
+  .WIM-aboutMeditation .left {
+    position: static;
+    height: 420px;
+    width: 100%;
+  }
+
+  .WIM-aboutMeditation .container {
+    position: static;
+  }
+  .WIM-aboutMeditation .aboutMeditation-content {
+    position: static;
+    width: 100%;
+    padding-left: 0px;
+    display: block;
+  }
+
+  .WIM-aboutMeditation .right {
+    max-width: 100%;
+  }
+
+  .WIM-aboutMeditation .heading1 {
+    padding-top: 42px;
+  }
+
+  .WIM-aboutMeditation .heading2 {
+    margin-top: 43px;
+  }
+
+  .WIM-aboutMeditation .paragraph2 {
+    margin-top: 43px;
+  }
+
+  .WIM-aboutMeditation .btn1 {
+    margin-top: 43px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .WIM-faq .faq-content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .WIM-faq .heading2 {
+    font-size: 40px;
+  }
+  .WIM-faq .accordion {
+    margin-top: 0px;
+  }
+}
+
+
+/* processs */
