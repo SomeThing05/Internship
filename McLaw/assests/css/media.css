@@ -141,29 +141,23 @@
 
 /* .WIM-aboutMeditation  */
 @media (max-width: 960px) {
-  .WIM-aboutMeditation {
-    position: static;
+  .WIM-aboutMeditation  {
+    position:static;
     height: auto;
+    width: calc(100% + 40px);
+    margin-left :-20px;
   }
-  .WIM-aboutMeditation .left {
+  .WIM-aboutMeditation .left{
     position: static;
-    height: 420px;
     width: 100%;
   }
 
-  .WIM-aboutMeditation .container {
-    position: static;
-  }
-  .WIM-aboutMeditation .aboutMeditation-content {
-    position: static;
+  .WIM-aboutMeditation .right{
+    position:static;
     width: 100%;
-    padding-left: 0px;
-    display: block;
+    padding-bottom:40px;
   }
-
-  .WIM-aboutMeditation .right {
-    max-width: 100%;
-  }
+  
 
   .WIM-aboutMeditation .heading1 {
     padding-top: 42px;

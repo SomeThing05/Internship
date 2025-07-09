@@ -622,53 +622,60 @@ img {
 
 .WIM-aboutMeditation {
   position: relative;
-  background-color: var(--blue);
   height: 746px;
 }
 
 .WIM-aboutMeditation .left {
   position: absolute;
   top: 0;
-  left: -20px;
+  left: 0;
   width: 50%;
-}
-
-.WIM-aboutMeditation .container {
-  position: relative;
-  height: 100%;
-}
-.WIM-aboutMeditation .aboutMeditation-content {
-  font-family: var(--roboto-font);
-  position: absolute;
-  right: 20px;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 65px;
 }
 
 .WIM-aboutMeditation .right {
-  max-width: 540px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: var(--blue);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
+
+.WIM-aboutMeditation .right-content{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.WIM-aboutMeditation .aboutMeditation-content {
+  font-family: var(--roboto-font); 
+}
+
+
 
 .WIM-aboutMeditation .heading1 {
   font-size: 14px;
   color: #ffffff;
   opacity: 0.5;
+  max-width: 540px;
 }
 
 .WIM-aboutMeditation .heading2 {
   font-size: 35px;
   color: #ffffff;
   margin-top: 64px;
+  max-width: 540px;
 }
 .WIM-aboutMeditation .paragraph1 {
   font-size: 16px;
   opacity: 75%Z;
   color: #f8f8f8;
   margin-top: 45px;
+  max-width: 540px;
 }
 
 .WIM-aboutMeditation .paragraph2 {
@@ -676,6 +683,7 @@ img {
   opacity: 75%Z;
   color: #f8f8f8;
   margin-top: 30px;
+  max-width: 540px;
 }
 
 .WIM-aboutMeditation .btn1 {
