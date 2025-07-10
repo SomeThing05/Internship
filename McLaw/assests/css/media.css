@@ -36,34 +36,34 @@
 
 @media (max-width: 940px) {
   .home-ourProcess {
-    height: 1100px;
+    height: 1200px;
     position: static;
   }
 
-  .ourProcess-content {
+  .home-ourProcess .ourProcess-content {
     display: flex;
     flex-direction: column-reverse;
     width: calc(100% + 40px);
     margin-left: -20px;
   }
 
-  .ourProcess-content .left {
+  .home-ourProcess .ourProcess-content .left {
     width: 100%;
     position: static;
   }
 
-  .ourProcess-content .right {
+  .home-ourProcess .ourProcess-content .right {
     width: 100%;
     top: 0px;
     height: 420px;
     position: static;
   }
 
-  .ourProcess-content .left .left-content .heading2 {
+  .home-ourProcess .ourProcess-content .left .left-content .heading2 {
     margin-top: 50px;
   }
 
-  .ourProcess-content .left .left-content .accordion {
+  .home-ourProcess .ourProcess-content .left .left-content .accordion {
     margin-top: 65px;
   }
 }
@@ -141,23 +141,25 @@
 
 /* .WIM-aboutMeditation  */
 @media (max-width: 960px) {
-  .WIM-aboutMeditation  {
-    position:static;
+  .WIM-aboutMeditation {
+    position: static;
     height: auto;
-    width: calc(100% + 40px);
-    margin-left :-20px;
   }
-  .WIM-aboutMeditation .left{
+
+  .WIM-aboutMeditation .aboutMeditation-content {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .WIM-aboutMeditation .left {
     position: static;
     width: 100%;
   }
 
-  .WIM-aboutMeditation .right{
-    position:static;
+  .WIM-aboutMeditation .right {
+    position: static;
     width: 100%;
-    padding-bottom:40px;
+    padding-bottom: 40px;
   }
-  
 
   .WIM-aboutMeditation .heading1 {
     padding-top: 42px;
@@ -191,5 +193,90 @@
   }
 }
 
-
 /* processs */
+/* our-process */
+@media (max-width: 940px) {
+  .Process-ourProcess {
+    height: 1200px;
+    position: static;
+  }
+
+  .Process-ourProcess .ourProcess-content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  .Process-ourProcess .left {
+    width: 100%;
+    position: static;
+  }
+
+  .Process-ourProcess .right {
+    width: 100%;
+    top: 0px;
+    height: 420px;
+    position: static;
+  }
+
+  .Process-ourProcess .heading2 {
+    margin-top: 50px;
+  }
+
+  .Process-ourProcess .accordion {
+    margin-top: 65px;
+  }
+}
+
+/* otd */
+
+@media (max-width: 960px) {
+  .Process-otd {
+    position: static;
+    height: auto;
+  }
+
+  .Process-otd .otd-content {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .Process-otd .left {
+    position: static;
+    width: 100%;
+  }
+
+  .Process-otd .right {
+    position: static;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .Process-otd .heading1 {
+    padding-top: 42px;
+  }
+
+  .Process-otd .heading2 {
+    margin-top: 43px;
+  }
+
+  .Process-otd .paragraph2 {
+    margin-top: 43px;
+  }
+
+  .Process-otd .btn1 {
+    margin-top: 43px;
+    padding-bottom: 10px;
+  }
+}
+
+/* pfm */
+@media (max-width:1050px){
+  .Process-pfm .sub-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+
