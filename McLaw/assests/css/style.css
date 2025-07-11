@@ -1,6 +1,6 @@
 :root {
-  --playfair-font: 'Playfair', serif;
-  --roboto-font: 'Roboto', sans-serif;
+  --playfair-font: 'Lyon', serif;
+  --roboto-font: 'Maison Neue Book', sans-serif;
   --primary-color: var(--white);
   --secondary-color: var(--blue);
   --background-color1: var(--grye1);
@@ -82,8 +82,7 @@ img {
 .nav-links {
   display: flex;
   list-style-type: none;
-  gap: 41px;
-  margin-right: 20px;
+  gap: 41px;  
   font-size: 14px;
   font-family: var(--roboto-font);
   color: var(--blue);
@@ -91,6 +90,7 @@ img {
   align-items: center;
   white-space: nowrap;
 }
+
 .get-btn {
   padding: 15px 20px 15px 20px;
   border: 1px solid #ebebeb;
@@ -180,12 +180,13 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100%;
   padding-top: 127px;
+  padding-bottom: 127px;
 }
 
 .quote .slide-content {
+  font-style: var(--roboto-font);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,8 +204,8 @@ img {
 
 .quote .slide-content2 {
   font-size: 20px;
-  width: 662;
-  height: 168;
+  width: 662px;
+  height: 168px;
   font-size: 45px;
 }
 
@@ -214,9 +215,9 @@ img {
   opacity: 50%;
 }
 
-.quote .swiper-pagination {
-  margin-top: 35px;
-  margin-bottom: 17px;
+.quote .swiper-pagination-bullet-active {
+  background-color: rgb(239, 239, 239); /* active color */
+  opacity: 1;
 }
 
 /* .home-aboutMeditation section */
@@ -379,6 +380,7 @@ img {
 }
 
 .home-caseStudies .caseStudies-content .case-grid {
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 73px;
@@ -586,7 +588,6 @@ img {
 
 .aboutPeter .aboutPeter-content .paragraph1 {
   font-size: 16px;
-
   margin-top: 17px;
   opacity: 75%;
   max-width: 524px;
@@ -833,7 +834,6 @@ img {
   max-width: 500px;
   padding-left: 20px;
   padding-right: 20px;
-  
 }
 
 .Process-ourProcess .heading1 {
@@ -970,7 +970,7 @@ img {
   top: 0;
   left: 0;
   width: 50%;
-  height:100%;
+  height: 100%;
 }
 
 .Process-otd .right {
@@ -990,8 +990,6 @@ img {
   padding-right: 20px;
   padding-left: 20px;
 }
-
-
 
 .Process-otd .heading1 {
   font-size: 14px;
@@ -1035,4 +1033,152 @@ img {
 .Process-otd .btn1 img {
   width: 9.23px;
   height: 12.63;
+}
+
+/* resource-hub */
+
+/* headline */
+
+.resourceHub-headline .headline-content {
+  font-family: var(--roboto-font);
+  font-size: 45px;
+  padding-top: 82px;
+  padding-bottom: 109px;
+  max-width: 658px;
+}
+
+.resourceHub-headline .heading1 {
+  color: var(--grey2);
+  white-space: nowrap;
+}
+.resourceHub-headline .heading2 {
+  color: var(--blue);
+}
+
+/* case-studies */
+
+.case-Studies {
+  font-family: var(--roboto-font);
+}
+
+.case-Studies input[type='radio'] {
+  display: none;
+}
+
+.case-Studies .filter-buttons {
+  margin-top: 27.5px;
+  font-size: 14px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.case-Studies .filter-btn,
+.all-btn {
+  border: 2px solid;
+  border-color: var(--grey2);
+  padding: 11px 17px;
+  border-radius: 30px;
+  color: var(--blue);
+  display: inline-block;
+}
+
+.case-Studies .case-grid {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 73px;
+  margin-top: 44px;
+}
+
+.case-Studies .case-card {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  display: none;
+}
+.case-Studies .case-card:hover {
+  transform: translateY(-5px);
+}
+.case-Studies .cardImg {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+.case-Studies .card-text {
+  padding: 20px;
+  font-family: var(--roboto-font);
+  color: var(--blue);
+}
+.case-Studies .case-type {
+  font-size: 16px;
+  opacity: 75%;
+  margin-top: 54px;
+}
+
+.case-Studies .case-summary {
+  font-size: 22px;
+  margin-top: 24px;
+  max-width: 392px;
+}
+
+.case-Studies .case-btn img {
+  margin-top: 24px;
+  margin-bottom: 45px;
+}
+
+.case-Studies #view-all:checked ~ .container .all-btn,
+.case-Studies #meditation:checked ~ .container .filter-btn.mediation-btn,
+.case-Studies #workplace_employment:checked ~ .container .filter-btn.workplace_employment-btn,
+.case-Studies #civil_commercial:checked ~ .container .filter-btn.civil_commercial-btn,
+.case-Studies #family_bussiness:checked ~ .container .filter-btn.family_bussiness-btn {
+  background-color: var(--blue);
+  padding: 11px 17px;
+  border-radius: 30px;
+  color: var(--primary-color);
+  display: inline-block;
+}
+
+.case-Studies #view-all:checked ~ .container .case-card,
+.case-Studies #meditation:checked ~ .container .case-card.meditation,
+.case-Studies #workplace_employment:checked ~ .container .case-card.workplace_employment,
+.case-Studies #civil_commercial:checked ~ .container .case-card.civil_commercial,
+.case-Studies #family_bussiness:checked ~ .container .case-card.family_bussiness {
+  display: block;
+}
+
+.case-Studies .lodeMore-btn {
+  background-color: var(--blue);
+  padding: 11px 17px;
+  border-radius: 30px;
+  color: var(--primary-color);
+  display: inline-block;
+  margin-bottom: 114px;
+  margin-top: 114px;
+}
+
+/* cs-open */
+
+/* .csOpen-headline */
+
+.csOpen-headline .headline-content {
+  padding: 83px 0px;
+  font-family: var(--roboto-font);
+  color: var(--blue);
+  max-width: 632px;
+}
+.csOpen-headline .heading1 {
+  font-weight: normal;
+  opacity: 75%;
+  font-size: 16px;
+}
+
+.csOpen-headline .heading2 {
+  font-size: 45px;
+  font-weight: normal;
 }

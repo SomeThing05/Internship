@@ -15,6 +15,9 @@
     width: 100%;
     display: none;
   }
+  .nav-links:last-child {
+    padding-bottom: 41px;
+  }
 
   .get-btn {
     border: none;
@@ -74,16 +77,19 @@
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+   
   }
 
   .footer-grid .card3 {
     max-width: 150px;
-    align-items: center;
-    margin: 0 auto;
   }
 
   .footer-grid .card1 {
     gap: 50px;
+  }
+
+  .footer-grid .card2{
+    display: block;
   }
 
   .add {
@@ -105,34 +111,34 @@
     height: 406px;
   }
 
-  .welcome-content {
+  .welcome .welcome-content {
     position: static;
     padding: 51px;
   }
 
-  .welcome-content .heading1 {
+  .welcome .welcome-content .heading1 {
     color: #707070;
   }
 
-  .welcome-content .heading2 {
+  .welcome .welcome-content .heading2 {
     color: var(--blue);
     font-size: 40px;
   }
 
-  .welcome-content .btn2 {
+  .welcome .welcome-content .btn2 {
     color: var(--blue);
   }
 
-  .slide-content {
+  .quote .slide-content {
     font-size: 30px;
   }
 
-  .aboutMeditation-content {
+  .home-aboutMediation .aboutMeditation-content {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-  .home-caseStudies .container .caseStudies-content .case-grid {
+  .home-caseStudies .caseStudies-content .case-grid {
     padding-bottom: 80px;
   }
 }
@@ -271,12 +277,49 @@
 }
 
 /* pfm */
-@media (max-width:1050px){
-  .Process-pfm .sub-content{
+@media (max-width: 1050px) {
+  .Process-pfm .sub-content {
     flex-direction: column;
     align-items: center;
   }
-  
 }
 
+/* Resorce-hub */
+/* resourceHub-headline */
+
+@media (max-width: 450px) {
+  .resourceHub-headline .headline-content {
+    padding-top: 71px;
+    padding-bottom: 71px;
+    font-size: 40px;
+  }
+}
+
+/* case-studies */
+@media (max-width: 1020px) {
+  .case-Studies .filter-buttons {
+    overflow: auto;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 0px 20px;
+  }
+
+  .case-Studies .filter-buttons::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge (WebKit) */
+  }
+}
+
+@media (max-width:700px){
+  .case-Studies .case-grid{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 44px;
+  }
+  .case-Studies .lodeMore-btn{
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+}
+
+
+/* cs-open */
 
