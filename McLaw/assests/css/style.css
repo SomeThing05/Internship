@@ -21,6 +21,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -41,6 +42,14 @@ img {
   object-fit: cover;
   display: block;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
 /* home page */
 
 /* nav-bar */
@@ -60,14 +69,13 @@ img {
   align-items: center;
 }
 
-.logo {
-  max-width: 274px;
-}
 .lg {
   font-size: 35px;
   color: var(--blue);
   font-family: var(--playfair-font);
   white-space: nowrap;
+  line-height: 45px;
+  display: block;
 }
 .desc {
   font-family: var(--roboto-font);
@@ -75,18 +83,19 @@ img {
   font-size: 12px;
   white-space: nowrap;
   padding-left: 6px;
-  border-left: 1px solid #626772;
-  font-weight: lighter;
+  border-left: 1px solid currentColor;
+  line-height: 22px;
+  display: block;
 }
 
 .nav-links {
   display: flex;
   list-style-type: none;
-  gap: 41px;  
+  gap: 41px;
   font-size: 14px;
   font-family: var(--roboto-font);
-  color: var(--blue);
-  font-weight: bold;
+  color: rgb(25, 38, 71);
+  line-height: 17px;
   align-items: center;
   white-space: nowrap;
 }
@@ -94,9 +103,12 @@ img {
 .get-btn {
   padding: 15px 20px 15px 20px;
   border: 1px solid #ebebeb;
-  background-color: var(--grey1);
   border-radius: 30px;
   border-color: #ebebeb;
+  background-color: #f8f8f8;
+}
+.get-btn:hover {
+  filter: brightness(90%);
 }
 
 .nav-toggle {
@@ -122,7 +134,7 @@ img {
 
 .welcome .welcome-content {
   position: relative;
-  max-width: 700px;
+  max-width: 680px;
   padding-block: 308px;
 }
 
@@ -130,7 +142,8 @@ img {
   font-size: 14px;
   font-family: var(--roboto-font);
   color: #efefef;
-  white-space: nowrap;
+  
+  line-height: 30px;
 }
 
 .welcome .welcome-content .heading2 {
@@ -138,6 +151,7 @@ img {
   font-family: var(--roboto-font);
   color: var(--grey1);
   margin-top: 17px;
+  line-height: 65px;
 }
 
 .welcome .welcome-btn {
@@ -149,19 +163,49 @@ img {
   align-items: center;
   padding: 0px;
   gap: 13px;
+  line-height: 17px;
 }
 
-.welcome .welcome-content .btn1 {
+.welcome .btn1 {
+  background-color: var(--blue);
+  padding: 18px 22.5px;
+  transition: all 0.4s ease-in-out;
+  border-radius: 30px;
+}
+
+.welcome .btn2 {
+  border: 1px solid;
+  border-color: #ebebeb;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 18px 22.5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.welcome .welcome-btn:has(.btn1:hover) .btn1 {
+  border: 1px solid;
+  border-color: #ebebeb;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.welcome .welcome-btn:has(.btn1:hover) .btn2 {
+  background-color: var(--blue);
+  padding: 18px 22.5px;
+  transition: all 0.4 ease-in-out;
+  border-radius: 30px;
+}
+
+.welcome .welcome-btn:has(.btn2:hover) .btn2 {
   background-color: var(--blue);
   padding: 18px 22.5px;
   border-radius: 30px;
 }
-
-.welcome .welcome-content .btn2 {
+.welcome .welcome-btn:has(.btn2:hover) .btn1 {
   border: 1px solid;
   border-color: #ebebeb;
-  padding: 18px 22.5px;
   border-radius: 30px;
+  background-color: transparent;
 }
 
 /* quote section */
@@ -186,27 +230,27 @@ img {
 }
 
 .quote .slide-content {
-  font-style: var(--roboto-font);
+  font-family: var(--roboto-font);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   max-width: 700px;
-  color: #efefef;
+  color: #f8f8f8;
 }
 
 .quote .slide-content1 {
   font-size: 100px;
   width: 46px;
   height: 118px;
+  line-height: 118px;
 }
 
 .quote .slide-content2 {
-  font-size: 20px;
-  width: 662px;
-  height: 168px;
   font-size: 45px;
+  max-width: 662px;
+  line-height: 55px;
 }
 
 .quote .slide-content3 {
@@ -244,6 +288,7 @@ img {
   font-size: 45px;
   opacity: 1;
   margin-top: 40px;
+  line-height: 55px;
 }
 
 .home-aboutMeditation .aboutMeditation-content .paragraph2 {
@@ -251,6 +296,7 @@ img {
   opacity: 75%;
   margin-top: 30px;
   max-width: 700px;
+  line-height: 30px;
 }
 .home-aboutMeditation .aboutMeditation-content .btn1 {
   font-size: 20px;
@@ -258,10 +304,11 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
+  max-width: fit-content;
 }
 .home-aboutMeditation .aboutMeditation-content .btn1 img {
-  width: 9.23px;
-  height: 12.63;
+  width: 12.63px;
+  height: 9.23px;
 }
 
 /* .home-ourProcess section */
@@ -293,21 +340,23 @@ img {
 }
 
 .home-ourProcess .ourProcess-content .left .left-content {
-  max-width: 500px;
+  max-width: 500px; 
   padding-right: 20px;
   padding-left: 20px;
 }
 
 .home-ourProcess .ourProcess-content .left .left-content .heading1 {
+  color: #707070;
   font-size: 14px;
   opacity: 50%;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 .home-ourProcess .ourProcess-content .left .left-content .heading2 {
   font-size: 45px;
   margin-top: 110px;
-  width: 382px;
+  max-width: 382px;
+  line-height: 55px;
 }
 
 .home-ourProcess .ourProcess-content .left .left-content .accordion {
@@ -329,8 +378,6 @@ img {
   align-items: center;
   padding: 15px 0px;
   cursor: pointer;
-  font-weight: bold;
-  position: relative;
   padding-right: 11px;
 }
 
@@ -351,8 +398,9 @@ img {
 .home-ourProcess .ourProcess-content .left .left-content .accordion .accordion-item .content {
   max-height: 0;
   overflow: hidden;
-  /* padding: 0 15px; */
   transition: max-height 0.4s ease, padding 0.4s ease;
+  opacity: 75%;
+  line-height: 26px;
 }
 
 .home-ourProcess .ourProcess-content .left .left-content input[type='radio']:checked + label + .content {
@@ -368,17 +416,22 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 60px;
+}
+.home-caseStudies .caseStudies-content .heading1 {
   font-family: var(--roboto-font);
   color: var(--blue);
   font-size: 14px;
-  padding: 60px;
-  .viewAll-btn {
-    padding: 15px 22px;
-    border: 3px solid var(--grey1);
-    border-radius: 25%;
-  }
+  letter-spacing: 0.28px;
 }
-
+.home-caseStudies .caseStudies-content .viewAll-btn {
+  font-family: var(--roboto-font);
+  color: var(--blue);
+  font-size: 14px;
+  padding: 15px 22px;
+  border: 1px solid #ebebeb;
+  border-radius: 30px;
+}
 .home-caseStudies .caseStudies-content .case-grid {
   background-color: #ffffff;
   display: grid;
@@ -400,7 +453,6 @@ img {
 .home-caseStudies .caseStudies-content .case-card .cardImg {
   width: 100%;
   height: 336px;
-  display: block;
 }
 .home-caseStudies .caseStudies-content .card-text {
   padding: 20px;
@@ -411,25 +463,20 @@ img {
   font-size: 16px;
   opacity: 75%;
   margin-top: 30px;
+  font-weight: 100;
 }
 
 .home-caseStudies .caseStudies-content .case-summary {
   font-size: 22px;
   margin-top: 7px;
+  line-height: 30px;
 }
 
 .home-caseStudies .caseStudies-content .case-btn img {
-  padding: 10px;
-  border: 3px solid var(--grey2);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 100%;
-  font-weight: 500;
   transition: background-color 0.3s ease;
   margin-top: 21px;
-}
-.home-caseStudies .caseStudies-content .case-btn:hover {
-  background-color: var(--grey1); /* Darker blue on hover */
+  height: 46px;
+  width: 46px;
 }
 
 /* tpa section */
@@ -448,17 +495,19 @@ img {
 .tpa .tpa-content .tpa-Que {
   font-size: 45px;
   color: #1c2645;
+  line-height: 55px;
 }
 
 .tpa .tpa-content .tpa-helpLine {
   font-size: 14px;
   color: #ffffff;
-  padding: 18px 26px;
+  padding: 15px 26px;
   background-color: var(--blue);
   border: 3px solid #192647;
-  border-radius: 24px;
+  border-radius: 30px;
   display: inline-block;
   margin-top: 27.5px;
+  letter-spacing: 2px;
 }
 
 /* footer */
@@ -469,18 +518,13 @@ img {
 }
 
 .footer-content {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 .git-btn {
   padding: 12px 24px;
@@ -491,6 +535,20 @@ img {
 }
 
 .git-btn:hover {
+  background-color: #0056b3;
+}
+.footer-grid .card4{
+  display: none;
+}
+.git-btn2{
+  padding: 12px 24px;
+  border: 2px solid var(--grey1);
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+}
+.git-btn2:hover {
   background-color: #0056b3;
 }
 
@@ -523,6 +581,7 @@ img {
   padding-left: 0px;
   flex-direction: column;
   gap: 30px;
+
 }
 
 .footer-logo1 {
@@ -534,6 +593,9 @@ img {
   width: 132px;
 }
 
+.footer-grid .card3{
+  max-width: 218px;
+}
 .brn {
   display: flex;
   flex-direction: column;
@@ -551,6 +613,7 @@ img {
   color: #ccc;
   line-height: 1.6;
   margin-top: 13px;
+  line-height: 26px;
 }
 
 .add-link {
@@ -584,6 +647,7 @@ img {
 .aboutPeter .aboutPeter-content .heading1 {
   font-size: 45px;
   color: var(--blue);
+  line-height: 55px;
 }
 
 .aboutPeter .aboutPeter-content .paragraph1 {
@@ -591,6 +655,7 @@ img {
   margin-top: 17px;
   opacity: 75%;
   max-width: 524px;
+  line-height: 26px;
 }
 
 .aboutPeter .aboutPeter-btn {
@@ -622,7 +687,7 @@ img {
 
 .WIM-aboutMeditation {
   position: relative;
-  height: 746px;
+  height: 884px;
 }
 
 .WIM-aboutMeditation .aboutMeditation-content {
@@ -659,24 +724,28 @@ img {
   font-size: 14px;
   color: #ffffff;
   opacity: 0.5;
-}
 
+}
 .WIM-aboutMeditation .heading2 {
   font-size: 35px;
   color: #ffffff;
   margin-top: 64px;
+
 }
 .WIM-aboutMeditation .paragraph1 {
   font-size: 16px;
   opacity: 75%;
   color: #f8f8f8;
   margin-top: 45px;
+  line-height: 26px;
 }
 
 .WIM-aboutMeditation .paragraph2 {
   font-size: 16px;
   opacity: 75%;
   color: #f8f8f8;
+  line-height: 26px;
+  margin-top:15px;
 }
 
 .WIM-aboutMeditation .btn1 {
@@ -718,7 +787,7 @@ img {
   max-width: 850px;
   font-weight: normal;
   border-top: 1px solid var(--grey2);
-  padding: 36px;
+  padding: 36px 0px;
   margin-top: 28px;
 }
 
@@ -762,6 +831,7 @@ img {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
+  line-height: 26px;
 }
 .WIM-faq input[type='radio']:checked + label + .content {
   max-height: 200px;
@@ -789,6 +859,7 @@ img {
   opacity: 75%;
   margin-top: 26px;
   max-width: 524px;
+  line-height: 26px;
 }
 
 .Process-headline .btn1 {
@@ -845,7 +916,6 @@ img {
 .Process-ourProcess .heading2 {
   font-size: 45px;
   margin-top: 110px;
-  /* max-width: 382px; */
 }
 
 .Process-ourProcess .accordion {
@@ -889,8 +959,8 @@ img {
 .Process-ourProcess .content {
   max-height: 0;
   overflow: hidden;
-  /* padding: 0 15px; */
   transition: max-height 0.4s ease, padding 0.4s ease;
+  line-height: 26px;
 }
 
 .Process-ourProcess input[type='radio']:checked + label + .content {
@@ -925,6 +995,7 @@ img {
 
 .Process-pfm .subContent1 {
   max-width: 490px;
+  line-height: 26px;
 }
 
 .Process-pfm .subHeading1 {
@@ -989,6 +1060,7 @@ img {
 .Process-otd .right-content {
   padding-right: 20px;
   padding-left: 20px;
+  line-height: 26px;
 }
 
 .Process-otd .heading1 {
@@ -1125,6 +1197,7 @@ img {
   font-size: 22px;
   margin-top: 24px;
   max-width: 392px;
+  line-height: 34px;
 }
 
 .case-Studies .case-btn img {

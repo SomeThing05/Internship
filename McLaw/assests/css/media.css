@@ -11,7 +11,6 @@
     position: absolute;
     top: 113px;
     right: 0;
-    left: 0;
     width: 100%;
     display: none;
   }
@@ -53,8 +52,11 @@
   .home-ourProcess .ourProcess-content .left {
     width: 100%;
     position: static;
+    width: 100%;
   }
-
+  .home-ourProcess .ourProcess-content .left .left-content {
+    padding-right: 0px;
+  }
   .home-ourProcess .ourProcess-content .right {
     width: 100%;
     top: 0px;
@@ -73,35 +75,17 @@
 
 /* footer */
 
-@media (max-width: 760px) {
+@media (max-width: 1065px) {
   .footer-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
     gap: 30px;
-   
   }
 
-  .footer-grid .card3 {
-    max-width: 150px;
+  .git-btn {
+    display: none;
   }
-
-  .footer-grid .card1 {
-    gap: 50px;
-  }
-
-  .footer-grid .card2{
+  .footer-grid .card4 {
     display: block;
-  }
-
-  .add {
-    margin-top: 0px;
-  }
-
-  .add-link {
-    margin-top: 0px;
-  }
-
-  .mo-no {
-    margin-top: 0px;
   }
 }
 
@@ -125,13 +109,19 @@
     font-size: 40px;
   }
 
-  .welcome .welcome-content .btn2 {
-    color: var(--blue);
+  .welcome .btn2 {
+    color: #192647;
   }
 
   .quote .slide-content {
     font-size: 30px;
   }
+
+  
+
+.welcome .welcome-content .heading2{
+  line-height: 45px;
+}
 
   .home-aboutMediation .aboutMeditation-content {
     padding-top: 100px;
@@ -186,6 +176,9 @@
 }
 
 @media (max-width: 600px) {
+  .aboutPeter .aboutPeter-content{
+    padding-block: 71px;
+  }
   .WIM-faq .faq-content {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -274,6 +267,11 @@
     margin-top: 43px;
     padding-bottom: 10px;
   }
+
+  .Process-headline .headline-content{
+    padding-bottom: 53px;
+    padding-top: 71px;
+  }
 }
 
 /* pfm */
@@ -309,17 +307,15 @@
   }
 }
 
-@media (max-width:700px){
-  .case-Studies .case-grid{
-    grid-template-columns: repeat(1,1fr);
+@media (max-width: 700px) {
+  .case-Studies .case-grid {
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 44px;
   }
-  .case-Studies .lodeMore-btn{
+  .case-Studies .lodeMore-btn {
     margin-top: 44px;
     margin-bottom: 44px;
   }
 }
 
-
 /* cs-open */
-
