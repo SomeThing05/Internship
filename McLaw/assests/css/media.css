@@ -87,7 +87,11 @@
   .footer-grid .card4 {
     display: block;
   }
+  .empty{
+    height: 852px;
+  }
 }
+
 
 @media (max-width: 650px) {
   .welcome img {
