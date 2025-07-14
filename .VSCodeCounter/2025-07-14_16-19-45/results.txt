@@ -1,0 +1,45 @@
+Date : 2025-07-14 16:19:45
+Directory : c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw
+Total : 12 files,  2501 codes, 41 comments, 261 blanks, all 2803 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |          4 |      1,427 |         41 |        230 |      1,698 |
+| HTML       |          5 |      1,068 |          0 |         28 |      1,096 |
+| XML        |          2 |          6 |          0 |          2 |          8 |
+| JavaScript |          1 |          0 |          0 |          1 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                           |         12 |      2,501 |         41 |        261 |      2,803 |
+| . (Files)                                                                                   |          5 |      1,068 |          0 |         28 |      1,096 |
+| assests                                                                                     |          7 |      1,433 |         41 |        233 |      1,707 |
+| assests\css                                                                                 |          4 |      1,427 |         41 |        230 |      1,698 |
+| assests\images                                                                              |          2 |          6 |          0 |          2 |          8 |
+| assests\images\icons                                                                        |          2 |          6 |          0 |          2 |          8 |
+| assests\js                                                                                  |          1 |          0 |          0 |          1 |          1 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                    | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\WIM.html                             | HTML       |        250 |          0 |          6 |        256 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\css\font.css                 | PostCSS    |         77 |          0 |          8 |         85 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\css\main.css                 | PostCSS    |          3 |          0 |          4 |          7 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\css\media.css                | PostCSS    |        254 |         14 |         58 |        326 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\css\style.css                | PostCSS    |      1,093 |         27 |        160 |      1,280 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\images\icons\Path 12155.svg  | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\images\icons\White-arrow.svg | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\js\main.js                   | JavaScript |          0 |          0 |          1 |          1 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\cs-open.html                         | HTML       |         60 |          0 |          3 |         63 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\index.html                           | HTML       |        272 |          0 |          7 |        279 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\process.html                         | HTML       |        301 |          0 |          8 |        309 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\resourceHub.html                     | HTML       |        185 |          0 |          4 |        189 |
+| Total                                                                                       |            |      2,501 |         41 |        261 |      2,803 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
