@@ -1,27 +1,18 @@
-:root {
-  --playfair-font: 'Lyon', serif;
-  --roboto-font: 'Maison Neue Book', sans-serif;
-  --primary-color: var(--white);
-  --secondary-color: var(--blue);
-  --background-color1: var(--grye1);
-  --background-color2: var(--grye2);
-
-  --white: #ffffff;
-  --grey1: #f8f8f8;
-  --grey2: #eceded;
-  --blue: #192647;
-}
-
-/* body{
-  width: 1440px;
-  margin: 0 auto;
-} */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+:root {
+  --blue: #192647;
+  --font-lyon: 'Lyon';
+  --font-Neue: 'Neue Haas Grotesk Display Pro';
+  --font-MaisonBook: 'Maison Neue Book';
+  --font-Maison: 'Maison Neue';
+  --font-demi: 'Maison Neue Demi';
+  --font-neueHass: 'Neue Haas Grotesk Display Pro';
+}
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -42,50 +33,42 @@ img {
   object-fit: cover;
   display: block;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
+
 /* home page */
 
 /* nav-bar */
 
 .navbar {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 26px 0px;
   top: 0;
   position: sticky;
   z-index: 10;
-  background-color: var(--primary-color);
+  background-color: #ffffff;
 }
 
 .navbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--blue);
 }
 
 .lg {
   font-size: 35px;
-  color: var(--blue);
-  font-family: var(--playfair-font);
+  font-family: var(--font-lyon);
   white-space: nowrap;
   line-height: 45px;
-  display: block;
+  font-weight: 100;
 }
 .desc {
-  font-family: var(--roboto-font);
-  color: var(--blue);
+  font-family: var(--font-Maison);
   font-size: 12px;
   white-space: nowrap;
   padding-left: 6px;
   border-left: 1px solid currentColor;
   line-height: 22px;
   display: block;
+  font-weight: 300;
 }
 
 .nav-links {
@@ -93,15 +76,14 @@ h6 {
   list-style-type: none;
   gap: 41px;
   font-size: 14px;
-  font-family: var(--roboto-font);
-  color: rgb(25, 38, 71);
+  font-family: var(--font-demi);
   line-height: 17px;
   align-items: center;
   white-space: nowrap;
 }
 
 .get-btn {
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px;
   border: 1px solid #ebebeb;
   border-radius: 30px;
   border-color: #ebebeb;
@@ -126,51 +108,58 @@ h6 {
   position: relative;
 }
 
-.welcome img {
+.welcome .welcome-bg {
   position: absolute;
   top: 0%;
   left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .welcome .welcome-content {
-  position: relative;
-  max-width: 680px;
-  padding-block: 308px;
+  padding-top: 200px;
+  padding-bottom: 258px;
+  width: 100%;
 }
 
-.welcome .welcome-content .heading1 {
+.welcome .heading1 {
   font-size: 14px;
-  font-family: var(--roboto-font);
+  font-family: var(--font-Maison);
   color: #efefef;
-  
-  line-height: 30px;
+  font-weight: 700;
 }
 
-.welcome .welcome-content .heading2 {
+.welcome .heading2 {
   font-size: 55px;
-  font-family: var(--roboto-font);
-  color: var(--grey1);
+  font-family: var(--font-MaisonBook);
+  color: #f8f8f8;
   margin-top: 17px;
   line-height: 65px;
+  max-width: 625px;
 }
 
 .welcome .welcome-btn {
-  margin-top: 27.5px;
+  margin-top: 28px;
   font-size: 14px;
-  font-family: var(--roboto-font);
-  color: var(--primary-color);
-  display: flex;
-  align-items: center;
-  padding: 0px;
-  gap: 13px;
+  font-family: var(--font-demi);
+  color: #ffffff;
   line-height: 17px;
+  display: flex;
+  gap: 13px;
 }
 
 .welcome .btn1 {
   background-color: var(--blue);
-  padding: 18px 22.5px;
-  transition: all 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   border-radius: 30px;
+  padding: 15px 23px;
+  border: 1px solid;
+  border-color: var(--blue);
+}
+.welcome .btn1:hover {
+  border-color: #ebebeb;
+  background-color: transparent;
 }
 
 .welcome .btn2 {
@@ -178,45 +167,18 @@ h6 {
   border-color: #ebebeb;
   border-radius: 30px;
   background-color: transparent;
-  padding: 18px 22.5px;
-  transition: all 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  padding: 15px 23px;
 }
 
-.welcome .welcome-btn:has(.btn1:hover) .btn1 {
-  border: 1px solid;
-  border-color: #ebebeb;
-  border-radius: 30px;
-  background-color: transparent;
-}
-
-.welcome .welcome-btn:has(.btn1:hover) .btn2 {
+.welcome .btn2:hover {
   background-color: var(--blue);
-  padding: 18px 22.5px;
-  transition: all 0.4 ease-in-out;
-  border-radius: 30px;
-}
-
-.welcome .welcome-btn:has(.btn2:hover) .btn2 {
-  background-color: var(--blue);
-  padding: 18px 22.5px;
-  border-radius: 30px;
-}
-.welcome .welcome-btn:has(.btn2:hover) .btn1 {
-  border: 1px solid;
-  border-color: #ebebeb;
-  border-radius: 30px;
-  background-color: transparent;
+  border-color: var(--blue);
 }
 
 /* quote section */
 .quote {
-  width: 100%;
   background-color: var(--blue);
-}
-
-.quote .swiper {
-  width: 100%;
-  height: 100%;
 }
 
 .quote .swiper-backface-hidden .swiper-slide {
@@ -226,14 +188,14 @@ h6 {
   align-items: center;
   height: 100%;
   padding-top: 127px;
-  padding-bottom: 127px;
+  padding-bottom: 160px;
 }
 
 .quote .slide-content {
-  font-family: var(--roboto-font);
+  font-family: var(--font-Maison);
+  font-weight: 300;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   max-width: 700px;
@@ -243,8 +205,7 @@ h6 {
 .quote .slide-content1 {
   font-size: 100px;
   width: 46px;
-  height: 118px;
-  line-height: 118px;
+  line-height: 55px;
 }
 
 .quote .slide-content2 {
@@ -258,80 +219,96 @@ h6 {
   margin-top: 48px;
   opacity: 50%;
 }
+.swiper-pagination {
+  margin-bottom: 80px;
+}
+span.swiper-pagination-bullet {
+  background: rgb(87, 96, 119);
+}
 
 .quote .swiper-pagination-bullet-active {
-  background-color: rgb(239, 239, 239); /* active color */
-  opacity: 1;
+  background-color: rgb(239, 239, 239);
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  height: 1px;
+  width: 35px;
+  border-radius: 0;
 }
 
 /* .home-aboutMeditation section */
 .home-aboutMeditation {
-  width: 100%;
-  background-color: var(--primary-color);
+  background-color: #ffffff;
+  padding: 130px 0px;
 }
 
 .home-aboutMeditation .aboutMeditation-content {
-  font-family: var(--roboto-font);
   color: var(--blue);
   max-width: 915px;
-  padding-top: 130px;
-  padding-bottom: 130px;
 }
 
-.home-aboutMeditation .aboutMeditation-content .heading1 {
+.home-aboutMeditation .heading1 {
+  font-family: var(--font-Maison);
+  font-weight: 700;
   font-size: 14px;
   color: #707070;
   opacity: 0.5;
 }
 
-.home-aboutMeditation .aboutMeditation-content .paragraph1 {
+.home-aboutMeditation .paragraph1 {
+  font-family: var(--font-Maison);
+  font-weight: 300;
   font-size: 45px;
   opacity: 1;
   margin-top: 40px;
   line-height: 55px;
 }
 
-.home-aboutMeditation .aboutMeditation-content .paragraph2 {
+.home-aboutMeditation .paragraph2 {
+  font-family: var(--font-Maison);
+  font-weight: 300;
   font-size: 20px;
   opacity: 75%;
   margin-top: 30px;
   max-width: 700px;
   line-height: 30px;
 }
-.home-aboutMeditation .aboutMeditation-content .btn1 {
+.home-aboutMeditation .btn1 {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
   font-size: 20px;
-  padding-top: 40px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   gap: 8px;
-  max-width: fit-content;
 }
-.home-aboutMeditation .aboutMeditation-content .btn1 img {
+.home-aboutMeditation .btn1 .arrow {
   width: 12.63px;
   height: 9.23px;
 }
 
 /* .home-ourProcess section */
 .home-ourProcess {
-  height: 825px;
+  height: 783px;
   position: relative;
 }
 .home-ourProcess .ourProcess-content {
-  font-family: var(--roboto-font);
   color: var(--blue);
 }
 
-.home-ourProcess .ourProcess-content .left {
+.home-ourProcess .left {
   background-color: #f8f8f8;
   width: 50%;
   position: absolute;
   top: 0%;
   left: 0%;
   height: 100%;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
 }
-.home-ourProcess .ourProcess-content .right {
+
+.home-ourProcess .right {
   width: 50%;
   position: absolute;
   top: 0%;
@@ -339,63 +316,75 @@ h6 {
   height: 100%;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content {
-  max-width: 500px; 
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.home-ourProcess .ourProcess-content .left .left-content .heading1 {
+.home-ourProcess .heading1 {
   color: #707070;
   font-size: 14px;
   opacity: 50%;
-  padding-top: 80px;
+  font-family: var(--font-Maison);
+  font-weight: 700;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content .heading2 {
+.home-ourProcess .heading2 {
+  font-family: var(--font-Maison);
+  font-weight: 300;
   font-size: 45px;
   margin-top: 110px;
   max-width: 382px;
   line-height: 55px;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content .accordion {
-  margin-top: 70px;
+.home-ourProcess .accordion {
+  margin-top: 45.5px;
+  max-width: 540px;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content .accordion-item {
-  border-bottom: 1px solid var(--grey2);
-  border-top: 1px solid var(--grey2);
+.home-ourProcess .accordion-item {
+  border-top: 1px solid rgb(228, 228, 228);
+}
+.home-ourProcess .accordion:last-child {
+  border-bottom: 1px solid rgb(228, 228, 228);
 }
 
-.home-ourProcess .ourProcess-content .left .left-content input[type='radio'] {
+.home-ourProcess input[type='radio'] {
   display: none;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content label {
+.home-ourProcess label {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
+  font-size: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0px;
+  padding: 14px 0px;
   cursor: pointer;
-  padding-right: 11px;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content label .arrow {
+.home-ourProcess .arrow {
   width: 46px;
   height: 46px;
   transition: transform 0.3s ease;
-  object-fit: fill;
   border: 1px solid #ebebeb;
-  padding: 10px;
   border-radius: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content input[type='radio']:checked + label .arrow {
-  transform: rotate(90deg);
+.home-ourProcess .arrow img {
+  transform: rotate(180deg);
+  width: 13.63px;
+  height: 18.66px;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content .accordion .accordion-item .content {
+.home-ourProcess input[type='radio']:checked + label .arrow {
+  transform: rotate(180deg);
+}
+
+.home-ourProcess .content {
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 16px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
@@ -403,79 +392,85 @@ h6 {
   line-height: 26px;
 }
 
-.home-ourProcess .ourProcess-content .left .left-content input[type='radio']:checked + label + .content {
+.home-ourProcess input[type='radio']:checked + label + .content {
   max-height: 200px;
-  padding: 10px 15px 15px 0px;
+  padding-top: 16px;
+  padding-bottom: 30.5px;
 }
 
 /* .home-caseStudies section */
 .home-caseStudies {
   width: 100%;
   background-color: #ffffff;
+  padding-top: 145px;
+  padding-bottom: 129px;
 }
-.home-caseStudies .caseStudies-content .content1 {
+.home-caseStudies  .content1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px;
 }
-.home-caseStudies .caseStudies-content .heading1 {
-  font-family: var(--roboto-font);
+.home-caseStudies  .heading1 {
+  font-family: var(--font-neueHass);
+  font-weight: 500;
   color: var(--blue);
   font-size: 14px;
   letter-spacing: 0.28px;
 }
-.home-caseStudies .caseStudies-content .viewAll-btn {
-  font-family: var(--roboto-font);
+.home-caseStudies  .viewAll-btn {
+  font-family: var(--font-demi);
+  font-weight: normal;
   color: var(--blue);
   font-size: 14px;
-  padding: 15px 22px;
+  padding: 17px 24px;
   border: 1px solid #ebebeb;
   border-radius: 30px;
 }
-.home-caseStudies .caseStudies-content .case-grid {
+
+.home-caseStudies .case-grid {
+  margin-top: 46px;
   background-color: #ffffff;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3,1fr);
   gap: 73px;
-  padding-bottom: 130px;
 }
-.home-caseStudies .caseStudies-content .case-card {
+.home-caseStudies  .case-card {
   background-color: #fff;
-  border: 1px solid #ececec;
-  border-radius: 12px;
-  overflow: hidden;
+  border: 1px solid #EFEFEF;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease;
 }
-.home-caseStudies .caseStudies-content .case-card:hover {
+.home-caseStudies  .case-card:hover {
   transform: translateY(-5px);
 }
-.home-caseStudies .caseStudies-content .case-card .cardImg {
+.home-caseStudies  .cardImg {
   width: 100%;
   height: 336px;
 }
-.home-caseStudies .caseStudies-content .card-text {
-  padding: 20px;
-  font-family: var(--roboto-font);
+.home-caseStudies  .card-text {
+  padding:30px 0 20px 32px;
   color: var(--blue);
 }
-.home-caseStudies .caseStudies-content .case-type {
+.home-caseStudies  .case-type {
+  font-family: var(--font-Maison);
+  font-weight: 300;
   font-size: 16px;
   opacity: 75%;
-  margin-top: 30px;
   font-weight: 100;
 }
 
-.home-caseStudies .caseStudies-content .case-summary {
+.home-caseStudies  .case-summary {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
   font-size: 22px;
   margin-top: 7px;
   line-height: 30px;
+  max-width: 302px;
 }
-
-.home-caseStudies .caseStudies-content .case-btn img {
-  transition: background-color 0.3s ease;
-  margin-top: 21px;
+.home-caseStudies  .case-btn{
+    margin-top: 21px;
+}
+.home-caseStudies  .case-btn img {
   height: 46px;
   width: 46px;
 }
@@ -484,12 +479,13 @@ h6 {
 .tpa {
   width: 100%;
   background-color: #eceded;
-  padding-top: 120px;
-  padding-bottom: 119px;
+  padding: 120px 0;
+
 }
 
 .tpa .tpa-content {
-  font-family: var(--roboto-font);
+  font-family: var(--font-Maison);
+  font-weight: 300;
   max-width: 560px;
 }
 
@@ -511,22 +507,19 @@ h6 {
   letter-spacing: 2px;
 }
 
-.empty{
+.empty {
   width: 100%;
   height: 312px;
 }
 /* footer */
 .footer {
   background-color: var(--blue);
-  color: var(--grey1);
-  font-family: var(--roboto-font);
+  color: rgb(255, 255, 255);
+  font-family: var(--font-Maison);
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: -1;
-}
-
-.footer-content {
+  z-index: -2;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -537,29 +530,24 @@ h6 {
 }
 .git-btn {
   padding: 12px 24px;
-  border: 2px solid var(--grey1);
+  border: 2px solid rgb(182, 185, 194);
   border-radius: 30px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.git-btn:hover {
-  background-color: #0056b3;
-}
-.footer-grid .card4{
+
+.footer-grid .card4 {
   display: none;
 }
-.git-btn2{
+.git-btn2 {
   padding: 12px 24px;
-  border: 2px solid var(--grey1);
+  border: 2px solid rgb(182, 185, 194);
   border-radius: 30px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+}
 
-}
-.git-btn2:hover {
-  background-color: #0056b3;
-}
 
 .footer-links {
   display: flex;
@@ -572,9 +560,6 @@ h6 {
   transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-  color: #fff;
-}
 
 .footer-grid .card1 {
   display: flex;
@@ -590,7 +575,6 @@ h6 {
   padding-left: 0px;
   flex-direction: column;
   gap: 30px;
-
 }
 
 .footer-logo1 {
@@ -602,7 +586,7 @@ h6 {
   width: 132px;
 }
 
-.footer-grid .card3{
+.footer-grid .card3 {
   max-width: 218px;
 }
 .brn {
@@ -633,13 +617,9 @@ h6 {
   margin-top: 7px;
 }
 
-.add-link:hover {
-  color: #0056b3;
-}
 
 .mo-no {
   font-size: 14px;
-  color: #aaa;
   margin-top: 5px;
 }
 
@@ -647,7 +627,7 @@ h6 {
 
 /* about .aboutPeter */
 
-.aboutPeter{
+.aboutPeter {
   background-color: #ffffff;
 }
 .aboutPeter .aboutPeter-content {
@@ -736,13 +716,11 @@ h6 {
   font-size: 14px;
   color: #ffffff;
   opacity: 0.5;
-
 }
 .WIM-aboutMeditation .heading2 {
   font-size: 35px;
   color: #ffffff;
   margin-top: 64px;
-
 }
 .WIM-aboutMeditation .paragraph1 {
   font-size: 16px;
@@ -757,7 +735,7 @@ h6 {
   opacity: 75%;
   color: #f8f8f8;
   line-height: 26px;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .WIM-aboutMeditation .btn1 {
@@ -775,7 +753,7 @@ h6 {
 }
 
 /* WIM-faq */
-.WIM-faq{
+.WIM-faq {
   background-color: #ffffff;
 }
 .WIM-faq .faq-content {
@@ -853,7 +831,7 @@ h6 {
 
 /* process */
 /* .Process-headline */
-.Process-headline{
+.Process-headline {
   background-color: #fff;
 }
 .Process-headline .headline-content {
@@ -1125,7 +1103,7 @@ h6 {
 /* resource-hub */
 
 /* headline */
-.resourceHub-headline{
+.resourceHub-headline {
   background-color: #fff;
   margin-bottom: -1px;
 }
@@ -1158,9 +1136,7 @@ h6 {
   display: none;
 }
 
-
 .case-Studies .filter-buttons {
-
   font-size: 14px;
   color: var(--primary-color);
   display: flex;

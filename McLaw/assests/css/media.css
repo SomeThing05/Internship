@@ -1,6 +1,6 @@
 /* home-page */
 /* nav-bar  */
-@media (max-width: 1020px) {
+@media (max-width: 991px) {
   .nav-toggle-label {
     display: block;
   }
@@ -9,7 +9,7 @@
     flex-direction: column;
     background-color: #ffffff;
     position: absolute;
-    top: 113px;
+    top: 119px;
     right: 0;
     width: 100%;
     display: none;
@@ -36,40 +36,45 @@
 
 /* home-ourProcess */
 
-@media (max-width: 940px) {
+@media (max-width: 991px) {
   .home-ourProcess {
-    height: 1200px;
+    height: auto;
     position: static;
   }
 
   .home-ourProcess .ourProcess-content {
     display: flex;
     flex-direction: column-reverse;
-    width: calc(100% + 40px);
-    margin-left: -20px;
   }
 
-  .home-ourProcess .ourProcess-content .left {
+  .home-ourProcess .container {
+    background-color: #f8f8f8;
+  }
+  .home-ourProcess .left {
     width: 100%;
     position: static;
-    width: 100%;
+    padding: 101px 0px;
   }
-  .home-ourProcess .ourProcess-content .left .left-content {
-    padding-right: 0px;
-  }
-  .home-ourProcess .ourProcess-content .right {
-    width: 100%;
-    top: 0px;
+  .home-ourProcess .right {
+    width: calc(100% + 40px);
+    margin-left: -20px;
     height: 420px;
     position: static;
   }
 
-  .home-ourProcess .ourProcess-content .left .left-content .heading2 {
+  .home-ourProcess .heading2 {
     margin-top: 50px;
   }
+  .home-ourProcess .accordion {
+    margin-top: 50px;
+  }
+  .home-ourProcess label {
+    padding: 22px 0px;
+  }
 
-  .home-ourProcess .ourProcess-content .left .left-content .accordion {
-    margin-top: 65px;
+  .home-ourProcess input[type='radio']:checked + label + .content {
+    padding-top: 18px;
+    padding-bottom: 22px;
   }
 }
 
@@ -87,53 +92,90 @@
   .footer-grid .card4 {
     display: block;
   }
-  .empty{
+  .empty {
     height: 852px;
   }
 }
+/* case studies */
+@media(max-width:1065px){
+    .home-caseStudies{
+    padding: 116px 0 100px;
+  }
+  .home-caseStudies .case-grid {
+    margin-top: 34px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+}
 
-
-@media (max-width: 650px) {
-  .welcome img {
+@media (max-width: 575px) {
+  .welcome .container {
+    background-color: #ffffff;
+  }
+  .welcome .welcome-bg {
     position: static;
     height: 406px;
   }
 
   .welcome .welcome-content {
-    position: static;
-    padding: 51px;
+    padding-top: 50px;
+    padding-bottom: 46px;
   }
 
-  .welcome .welcome-content .heading1 {
+  .welcome .heading1 {
     color: #707070;
+    line-height: 16px;
+    opacity: 25%;
   }
 
-  .welcome .welcome-content .heading2 {
+  .welcome .heading2 {
     color: var(--blue);
     font-size: 40px;
+    line-height: 45px;
+    font-family: var(--font-Maison);
+    font-weight: 300;
+    margin-top: 32px;
+  }
+  .welcome .welcome-btn {
+    gap: 8px;
+    margin-top: 25px;
+  }
+  .welcome .btn1:hover {
+    color: var(--blue);
   }
 
   .welcome .btn2 {
-    color: #192647;
+    color: var(--blue);
   }
 
   .quote .slide-content {
     font-size: 30px;
+    line-height: 40px;
+  }
+  .quote .swiper-backface-hidden .swiper-slide {
+    padding-top: 106px;
+    padding-bottom: 180px;
   }
 
-  
-
-.welcome .welcome-content .heading2{
-  line-height: 45px;
-}
-
-  .home-aboutMediation .aboutMeditation-content {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  .home-aboutMeditation {
+    padding: 100px 0px;
+  }
+  .home-aboutMeditation .paragraph1 {
+    margin-top: 33px;
+  }
+  .home-aboutMeditation .paragraph2 {
+    margin-top: 50px;
+  }
+  .home-aboutMeditation .btn1 {
+    margin-top: 36px;
+  }
+  .home-caseStudies .case-grid{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 40px;
   }
 
-  .home-caseStudies .caseStudies-content .case-grid {
-    padding-bottom: 80px;
+  .tpa{
+    padding: 54px 0;
   }
 }
 
@@ -180,7 +222,7 @@
 }
 
 @media (max-width: 600px) {
-  .aboutPeter .aboutPeter-content{
+  .aboutPeter .aboutPeter-content {
     padding-block: 71px;
   }
   .WIM-faq .faq-content {
@@ -272,7 +314,7 @@
     padding-bottom: 10px;
   }
 
-  .Process-headline .headline-content{
+  .Process-headline .headline-content {
     padding-bottom: 53px;
     padding-top: 71px;
   }
