@@ -81,9 +81,12 @@
 /* footer */
 
 @media (max-width: 1065px) {
+  .footer{
+    padding: 25px 0;
+  }
   .footer-grid {
     flex-direction: column-reverse;
-    gap: 30px;
+    gap: 20px;
   }
 
   .git-btn {
@@ -95,15 +98,29 @@
   .empty {
     height: 852px;
   }
+  .footer-grid .card2 {
+    flex-direction: row;
+    justify-content: left;
+  }
+  .add {
+    margin-top:2px;
+  }
+
+  .add-link{
+    margin-top: 3px;
+  }
+  .mo-no{
+    margin-top: 2px;
+  }
 }
 /* case studies */
-@media(max-width:1065px){
-    .home-caseStudies{
+@media (max-width: 1065px) {
+  .home-caseStudies {
     padding: 116px 0 100px;
   }
   .home-caseStudies .case-grid {
     margin-top: 34px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 }
@@ -169,12 +186,12 @@
   .home-aboutMeditation .btn1 {
     margin-top: 36px;
   }
-  .home-caseStudies .case-grid{
-    grid-template-columns: repeat(1,1fr);
+  .home-caseStudies .case-grid {
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 40px;
   }
 
-  .tpa{
+  .tpa {
     padding: 54px 0;
   }
 }
