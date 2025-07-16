@@ -58,7 +58,6 @@
   .home-ourProcess .right {
     width: calc(100% + 40px);
     margin-left: -20px;
-    height: 420px;
     position: static;
   }
 
@@ -81,7 +80,10 @@
 /* footer */
 
 @media (max-width: 1065px) {
-  .footer{
+  .empty {
+    height: 645px;
+  }
+  .footer {
     padding: 25px 0;
   }
   .footer-grid {
@@ -95,26 +97,24 @@
   .footer-grid .card4 {
     display: block;
   }
-  .empty {
-    height: 852px;
-  }
+
   .footer-grid .card2 {
     flex-direction: row;
     justify-content: left;
   }
   .add {
-    margin-top:2px;
+    margin-top: 2px;
   }
 
-  .add-link{
+  .add-link {
     margin-top: 3px;
   }
-  .mo-no{
+  .mo-no {
     margin-top: 2px;
   }
 }
 /* case studies */
-@media (max-width: 1065px) {
+@media (max-width: 1199px) {
   .home-caseStudies {
     padding: 116px 0 100px;
   }
@@ -199,33 +199,32 @@
 /* .WIM */
 
 /* .WIM-aboutMeditation  */
-@media (max-width: 960px) {
+@media (max-width: 991px) {
   .WIM-aboutMeditation {
     position: static;
     height: auto;
   }
 
-  .WIM-aboutMeditation .aboutMeditation-content {
-    width: calc(100% + 40px);
-    margin-left: -20px;
+  .WIM-aboutMeditation .container {
+    background-color: var(--blue);
   }
+
   .WIM-aboutMeditation .left {
     position: static;
     width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
   }
 
   .WIM-aboutMeditation .right {
     position: static;
     width: 100%;
-    padding-bottom: 40px;
-  }
-
-  .WIM-aboutMeditation .heading1 {
-    padding-top: 42px;
+    padding: 42px 0 101px;
   }
 
   .WIM-aboutMeditation .heading2 {
     margin-top: 43px;
+    line-height: 45px;
   }
 
   .WIM-aboutMeditation .paragraph2 {
@@ -233,93 +232,141 @@
   }
 
   .WIM-aboutMeditation .btn1 {
-    margin-top: 43px;
-    padding-bottom: 10px;
+    margin-top: 33px;
   }
 }
 
-@media (max-width: 600px) {
-  .aboutPeter .aboutPeter-content {
-    padding-block: 71px;
+@media (max-width: 575px) {
+  .aboutPeter {
+    padding: 71px 0px 88px;
   }
-  .WIM-faq .faq-content {
-    padding-top: 100px;
-    padding-bottom: 100px;
+
+  .aboutPeter .heading1 {
+    line-height: 50px;
+  }
+  .aboutPeter .paragraph1 {
+    margin-top: 34px;
+  }
+  .aboutPeter .aboutPeter-btn {
+    margin-top: 34px;
+  }
+  .WIM-faq {
+    padding: 100px 0;
+  }
+  .WIM-faq .heading1 {
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   .WIM-faq .heading2 {
+    margin-top: 67px;
     font-size: 40px;
   }
   .WIM-faq .accordion {
-    margin-top: 0px;
+    border-top: 1px solid rgb(228, 228, 228);
+    margin-top: 71px;
+  }
+
+  .WIM-faq label {
+    padding: 22px 0;
+  }
+
+  .WIM-faq input[type='radio']:checked + label + .content {
+    padding: 15px 0 23px;
   }
 }
 
 /* processs */
 /* our-process */
+
 @media (max-width: 940px) {
   .Process-ourProcess {
-    height: 1200px;
+    height: auto;
     position: static;
   }
 
   .Process-ourProcess .ourProcess-content {
     display: flex;
     flex-direction: column-reverse;
-    width: calc(100% + 40px);
-    margin-left: -20px;
+  }
+  .Process-ourProcess .container{
+    background-color:  #f8f8f8;
   }
 
   .Process-ourProcess .left {
     width: 100%;
     position: static;
+    padding: 35px 0 100px;
   }
 
   .Process-ourProcess .right {
-    width: 100%;
-    top: 0px;
-    height: 420px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
     position: static;
   }
 
   .Process-ourProcess .heading2 {
-    margin-top: 50px;
+    font-size: 35px;
+    margin-top: 43px;
+    line-height: 45px;
+  }
+  .Process-ourProcess label {
+    line-height: 30px;
+    padding: 16px 0;
   }
 
   .Process-ourProcess .accordion {
-    margin-top: 65px;
+    margin-top: 71px;
+  }
+  .Process-ourProcess input[type='radio']:checked + label + .content {
+    padding-bottom: 16px;
+    padding-top: 19px;
   }
 }
 
-/* otd */
+@media (max-width: 575px) {
+  .Process-headline {
+    padding: 71px 0 88px;
+  }
+  .Process-headline .heading1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .Process-headline .paragraph1 {
+    margin-top: 34px;
+  }
 
-@media (max-width: 960px) {
+  .Process-headline .btn1 {
+    margin-top: 34px;
+  }
+}
+/* otd */
+@media (max-width: 991px) {
   .Process-otd {
     position: static;
     height: auto;
   }
 
-  .Process-otd .otd-content {
-    width: calc(100% + 40px);
-    margin-left: -20px;
+  .Process-otd .container {
+    background-color: var(--blue);
   }
+
   .Process-otd .left {
     position: static;
     width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
   }
 
   .Process-otd .right {
     position: static;
     width: 100%;
-    padding-bottom: 40px;
-  }
-
-  .Process-otd .heading1 {
-    padding-top: 42px;
+    padding: 42px 0 101px;
   }
 
   .Process-otd .heading2 {
     margin-top: 43px;
+    line-height: 45px;
   }
 
   .Process-otd .paragraph2 {
@@ -327,21 +374,32 @@
   }
 
   .Process-otd .btn1 {
-    margin-top: 43px;
-    padding-bottom: 10px;
-  }
-
-  .Process-headline .headline-content {
-    padding-bottom: 53px;
-    padding-top: 71px;
+    margin-top: 33px;
   }
 }
 
 /* pfm */
 @media (max-width: 1050px) {
+  .Process-pfm{
+    padding: 42px 0 70  px;
+  }
+  .Process-pfm .heading2{
+    margin-top: 71px;
+    font-size: 35px;
+    line-height:45px;
+  }
+
   .Process-pfm .sub-content {
+    margin-top: 71px;
     flex-direction: column;
     align-items: center;
+    gap: 101px;
+  }
+  .Process-pfm .subParagraph1{
+    margin-top: 23px;
+  }
+  .Process-pfm .listItem{
+    margin-bottom: 31px;
   }
 }
 
