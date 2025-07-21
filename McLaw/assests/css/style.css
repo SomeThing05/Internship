@@ -39,7 +39,7 @@ img {
 /* nav-bar */
 
 .navbar {
-  padding: 26px 0px;
+  padding:26px 0px;
   top: 0;
   position: sticky;
   z-index: 10;
@@ -80,6 +80,7 @@ img {
   line-height: 17px;
   align-items: center;
   white-space: nowrap;
+  font-weight: normal;
 }
 
 .get-btn {
@@ -137,6 +138,7 @@ img {
   margin-top: 17px;
   line-height: 65px;
   max-width: 625px;
+  font-weight: normal;
 }
 
 .welcome .welcome-btn {
@@ -219,10 +221,10 @@ img {
   margin-top: 48px;
   opacity: 50%;
 }
-.swiper-pagination {
+.quote .swiper-pagination {
   margin-bottom: 80px;
 }
-span.swiper-pagination-bullet {
+.quote span.swiper-pagination-bullet {
   background: rgb(87, 96, 119);
 }
 
@@ -230,7 +232,7 @@ span.swiper-pagination-bullet {
   background-color: rgb(239, 239, 239);
 }
 
-.swiper .swiper-pagination .swiper-pagination-bullet {
+.quote .swiper .swiper-pagination .swiper-pagination-bullet {
   height: 1px;
   width: 35px;
   border-radius: 0;
@@ -1048,12 +1050,12 @@ span.swiper-pagination-bullet {
   line-height: 30px;
   font-size: 14px;
   color: var(--blue);
-  padding-bottom: 23px ;
+  padding-bottom: 23px;
   border-bottom: 1px solid rgb(218, 219, 219);
 }
 
-
-.Process-pfm .subParagraph1,.subList1{
+.Process-pfm .subParagraph1,
+.subList1 {
   font-size: 16px;
   color: var(--blue);
   opacity: 75%;
@@ -1061,7 +1063,7 @@ span.swiper-pagination-bullet {
   line-height: 26px;
   list-style-image: url(/McLaw/assests/images/icons/blue-circle-bullet.png);
 }
-.Process-pfm .subParagraph1{
+.Process-pfm .subParagraph1 {
   font-family: var(--font-MaisonBook);
   font-weight: normal;
   margin-top: 28px;
@@ -1071,7 +1073,7 @@ span.swiper-pagination-bullet {
   font-family: var(--font-Maison);
   font-weight: 300;
 }
-.Process-pfm .listItem{
+.Process-pfm .listItem {
   margin-bottom: 26px;
   margin-left: 20px;
   padding-left: 19px;
@@ -1104,7 +1106,7 @@ span.swiper-pagination-bullet {
   display: flex;
   justify-content: center;
 }
-.Process-otd .right-content{
+.Process-otd .right-content {
   max-width: 540px;
 }
 
@@ -1132,7 +1134,6 @@ span.swiper-pagination-bullet {
   color: #f8f8f8;
   margin-top: 45px;
   line-height: 26px;
-
 }
 
 .Process-otd .paragraph2,
@@ -1165,32 +1166,32 @@ span.swiper-pagination-bullet {
 
 /* headline */
 .resourceHub-headline {
-  background-color: #fff;
-  margin-bottom: -1px;
+  background-color: #ffffff;
+  padding: 82px 0 109px;
 }
 
 .resourceHub-headline .headline-content {
-  font-family: var(--roboto-font);
+  font-family: var(--font-Maison);
   font-size: 45px;
-  padding-top: 82px;
-  padding-bottom: 109px;
   max-width: 658px;
+  line-height: 55px;
 }
 
 .resourceHub-headline .heading1 {
-  color: var(--grey2);
+  color: rgb(229, 229, 229);
   white-space: nowrap;
+  font-weight: 300;
 }
 .resourceHub-headline .heading2 {
   color: var(--blue);
+  font-weight: 300;
 }
 
 /* case-studies */
 
 .case-Studies {
-  font-family: var(--roboto-font);
   background-color: #ffffff;
-  padding-top: 27.5px;
+  padding-bottom: 140px;
 }
 
 .case-Studies input[type='radio'] {
@@ -1198,19 +1199,19 @@ span.swiper-pagination-bullet {
 }
 
 .case-Studies .filter-buttons {
-  font-size: 14px;
-  color: var(--primary-color);
   display: flex;
   align-items: center;
   gap: 10px;
   white-space: nowrap;
 }
 
-.case-Studies .filter-btn,
-.all-btn {
+.case-Studies .filter-btn {
+  font-family: var(--font-demi);
+  font-size: 14px;
+  font-weight: normal;
   border: 2px solid;
-  border-color: var(--grey2);
-  padding: 11px 17px;
+  border-color: #ebebeb;
+  padding: 18px 17px 15px 17px;
   border-radius: 30px;
   color: var(--blue);
   display: inline-block;
@@ -1220,7 +1221,8 @@ span.swiper-pagination-bullet {
   background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 73px;
+  column-gap: 75px;
+  row-gap: 80px;
   margin-top: 44px;
 }
 
@@ -1242,18 +1244,20 @@ span.swiper-pagination-bullet {
   display: block;
 }
 .case-Studies .card-text {
-  padding: 20px;
-  font-family: var(--roboto-font);
+  padding: 54px 40px 45px;
   color: var(--blue);
 }
 .case-Studies .case-type {
+  font-family: var(--font-Maison);
+  font-weight: 300;
   font-size: 16px;
   opacity: 75%;
-  margin-top: 54px;
 }
 
 .case-Studies .case-summary {
-  font-size: 22px;
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
+  font-size: 26px;
   margin-top: 24px;
   max-width: 392px;
   line-height: 34px;
@@ -1261,7 +1265,6 @@ span.swiper-pagination-bullet {
 
 .case-Studies .case-btn img {
   margin-top: 24px;
-  margin-bottom: 45px;
 }
 
 .case-Studies #view-all:checked ~ .container .all-btn,
@@ -1270,9 +1273,10 @@ span.swiper-pagination-bullet {
 .case-Studies #civil_commercial:checked ~ .container .filter-btn.civil_commercial-btn,
 .case-Studies #family_bussiness:checked ~ .container .filter-btn.family_bussiness-btn {
   background-color: var(--blue);
-  padding: 11px 17px;
+  padding: 18px 17px 15px 17px;
   border-radius: 30px;
-  color: var(--primary-color);
+  border-color: var(--blue);
+  color: #ffffff;
   display: inline-block;
 }
 
@@ -1285,32 +1289,492 @@ span.swiper-pagination-bullet {
 }
 
 .case-Studies .lodeMore-btn {
+  font-family: var(--font-demi);
+  font-weight: normal;
+  font-size: 14px;
   background-color: var(--blue);
-  padding: 11px 17px;
+  padding: 18px 20px;
   border-radius: 30px;
-  color: var(--primary-color);
+  color: #fff;
   display: inline-block;
-  margin-bottom: 114px;
   margin-top: 114px;
+  letter-spacing: 2px;
 }
 
 /* cs-open */
 
 /* .csOpen-headline */
 
+.csOpen-headline {
+  padding: 84px 0px;
+  background-color: #fff;
+}
+
 .csOpen-headline .headline-content {
-  padding: 83px 0px;
-  font-family: var(--roboto-font);
+  font-family: var(--font-Maison);
   color: var(--blue);
   max-width: 632px;
 }
 .csOpen-headline .heading1 {
-  font-weight: normal;
   opacity: 75%;
   font-size: 16px;
+  font-weight: 300;
 }
 
 .csOpen-headline .heading2 {
   font-size: 45px;
+  font-weight: 300;
+  line-height: 55px;
+  margin-top: 23px;
+}
+
+/* csOpen-swiper */
+
+.csOpen-swiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.csOpen-swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+  left: 100px;
+}
+
+.csOpen-swiper .swiper-backface-hidden .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.csOpen-swiper span.swiper-pagination-bullet {
+  background-color: #fff;
+}
+.csOpen-swiper .swiper .swiper-pagination .swiper-pagination-bullet {
+  height: 1px;
+  width: 35px;
+  border-radius: 0;
+}
+
+.csOpen-swiper .swiper-pagination {
+  margin-bottom: 50px;
+}
+
+/* csOpen-aboutProject */
+
+.csOpen-aboutProject {
+  padding: 90px 0 210px;
+  background-color: #fff;
+}
+.csOpen-aboutProject .aboutProject-content {
+  display: flex;
+  justify-content: space-between;
+}
+.csOpen-aboutProject .text-block {
+  max-width: 755px;
+}
+
+.csOpen-aboutProject .text-heading {
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  color: var(--blue);
+  line-height: 55px;
+  font-size: 45px;
+}
+.csOpen-aboutProject .text-desc {
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--blue);
+  opacity: 75%;
+  line-height: 26px;
+  margin-top: 35px;
+}
+.csOpen-aboutProject .text-desc2 {
+  margin-top: 25px;
+}
+
+.csOpen-aboutProject .projectDetails {
+  max-width: 415px;
+}
+
+.csOpen-aboutProject .projectDetails-heading {
+  font-family: var(--font-Maison);
+  font-weight: 700;
+  color: #707070;
+  font-size: 14px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 30px;
+}
+
+.csOpen-aboutProject .companySector {
+  margin-top: 40px;
+}
+.csOpen-aboutProject .projectDetails-subHeading {
+  font-family: var(--font-demi);
   font-weight: normal;
+  font-size: 14px;
+  color: #1c2645;
+}
+.csOpen-aboutProject .subHeading-text {
+  font-family: var(--font-Maison);
+  font-weight: normal;
+  font-size: 14px;
+  color: #1c2645;
+  line-height: 14px;
+  margin-top: 13px;
+}
+
+.csOpen-aboutProject .service {
+  margin-top: 30px;
+}
+
+/* csOpen-ourSolution */
+
+.csOpen-ourSolution {
+  background-color: #f8f8f8;
+  padding: 125px 0 130px;
+}
+
+.csOpen-ourSolution .ourSolution-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.csOpen-ourSolution .content-heading {
+  font-family: var(--font-Maison);
+  font-weight: 700;
+  font-size: 14px;
+  color: #707070;
+  opacity: 50%;
+}
+
+.csOpen-ourSolution .content-subHeading {
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
+  color: var(--blue);
+  margin-top: 43px;
+}
+.csOpen-ourSolution .paragraph1 {
+  margin-top: 43px;
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  color: var(--blue);
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 75%;
+}
+.csOpen-ourSolution .paragraph2 {
+  margin-top: 15px;
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  color: var(--blue);
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 75%;
+}
+.csOpen-ourSolution .btn1 {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 60px;
+  color: var(--blue);
+}
+.csOpen-ourSolution .arrow {
+  width: 12.63px;
+  height: 9.23px;
+}
+
+/* csOpen-clientTestimonial */
+
+.csOpen-clientTestimonial {
+  position: relative;
+  height: 746px;
+}
+
+.csOpen-clientTestimonial .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.csOpen-clientTestimonial .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: var(--blue);
+  height: 100%;
+  padding: 92px 20px 238px;
+  display: flex;
+  justify-content: center;
+}
+
+.csOpen-clientTestimonial .right-content {
+  max-width: 540px;
+}
+
+.csOpen-clientTestimonial .heading1 {
+  font-family: var(--font-Maison);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  opacity: 50%;
+}
+
+.csOpen-clientTestimonial .paragraph1 {
+  margin-top: 132px;
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 45px;
+  color: #fff;
+}
+
+/* csOpen-caseStudies */
+
+.csOpen-caseStudies {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 145px;
+  padding-bottom: 129px;
+}
+
+.csOpen-caseStudies .heading1 {
+  font-family: var(--font-Maison);
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 14px;
+  letter-spacing: 0.28px;
+}
+
+.csOpen-caseStudies .case-grid {
+  margin-top: 46px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 73px;
+}
+.csOpen-caseStudies .case-card {
+  background-color: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+.csOpen-caseStudies .case-card:hover {
+  transform: translateY(-5px);
+}
+.csOpen-caseStudies .cardImg {
+  width: 100%;
+  height: 336px;
+}
+.csOpen-caseStudies .card-text {
+  padding: 30px 20px 20px 32px;
+  color: var(--blue);
+}
+.csOpen-caseStudies .case-type {
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 75%;
+  font-weight: 100;
+}
+
+.csOpen-caseStudies .case-summary {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: 7px;
+  line-height: 30px;
+  max-width: 302px;
+}
+.csOpen-caseStudies .case-btn {
+  margin-top: 21px;
+}
+.csOpen-caseStudies .case-btn img {
+  height: 46px;
+  width: 46px;
+}
+
+
+/* FAQ's  */
+/* faq-heroSection */
+.faq-heroSection{
+  background-color: rgba(248, 248, 248, 1);
+  padding: 166px 0 142px;
+}
+
+.faq-heroSection .heroSection-content{
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.faq-heroSection .heading1{
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
+  color: var(--blue);
+  text-align: center;
+}
+
+.faq-heroSection .paragraph1{
+  margin-top: 60px;
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--blue);
+  opacity: 75%;
+}
+.faq-heroSection .search-block{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+  
+}
+
+.faq-heroSection .searchbar{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #717171;
+  border-radius: 30px;
+  padding-left: 30px;
+  color: var(--blue);
+  height: 48px;
+}
+
+.faq-heroSection .searchbar::placeholder{
+  color: #717171;
+}
+
+.faq-heroSection .searchBtn{
+  font-family: var(--font-demi);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  height: 100%;
+  padding: 0 21px;
+  display: flex;
+  align-items: center;;
+  border: 1px solid #F8F8F8;
+  background-color: #1C2645;
+  border-radius: 30px;
+  height: 48px;   
+}
+
+.faq-heroSection .accordion{
+  margin-top: 77px;
+}
+
+.faq-heroSection .accordion-item {
+  border-bottom: 1px solid rgba(112, 112, 112, .15);
+  
+}
+.faq-heroSection input[type='radio'] {
+  display: none;
+}
+
+.faq-heroSection label {
+  font-family: var(--font-MaisonBook);
+  color: var(--blue);
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 26px 0px;
+}
+
+.faq-heroSection .arrow {
+  width: 46px;
+  height: 46px;
+  transition: transform 0.3s ease;
+  border: 1px solid #ebebeb;
+  border-radius: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-heroSection .arrow img {
+  transform: rotate(180deg);
+  width: 13.63px;
+  height: 18.66px;
+
+}
+
+.faq-heroSection input[type='radio']:checked + label .arrow {
+  transform: rotate(180deg);
+}
+
+.faq-heroSection .content {
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  line-height: 26px;
+  font-size: 16px;
+  opacity: 75%;
+}
+.faq-heroSection input[type='radio']:checked + label + .content {
+  max-height: 200px;
+  padding: 8px 0 33px;
+}
+
+/* faq-gitSection */
+.faq-gitSection {
+  padding: 121px 0 ;
+  background-color: #ECEDED;
+}
+.faq-gitSection .contentQue{
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
+  color: var(--blue);
+  max-width: 576px;
+}
+
+.faq-gitSection .gitBtn{
+  font-family: var(--font-demi);
+  font-weight: normal;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 15px 23px;
+  background-color: var(--blue);
+  border-radius: 30px;
+  border: 1px solid var(--blue);
+  margin-top: 22px;
+}
+
+
+/* GIT */
+
+.git-heroSection{
+  padding: 104px 0;
+  background-color: #F8F8F8;
+}
+
+.git-heroSection .heroSection-text{
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
 }

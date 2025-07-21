@@ -190,6 +190,28 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 40px;
   }
+  .home-caseStudies .cardImg {
+    height: 280px;
+  }
+
+  .home-caseStudies .card-text {
+    padding: 23px 20px 28px 28px;
+  }
+  .home-caseStudies .case-type {
+    font-size: 14px;
+  }
+
+  .home-caseStudies .case-summary {
+    margin-top: 17px;
+  }
+
+  .home-caseStudies .case-btn {
+    margin-top: 17px;
+  }
+  .home-caseStudies .case-btn img {
+    height: 38px;
+    width: 38px;
+  }
 
   .tpa {
     padding: 54px 0;
@@ -289,8 +311,8 @@
     display: flex;
     flex-direction: column-reverse;
   }
-  .Process-ourProcess .container{
-    background-color:  #f8f8f8;
+  .Process-ourProcess .container {
+    background-color: #f8f8f8;
   }
 
   .Process-ourProcess .left {
@@ -380,13 +402,13 @@
 
 /* pfm */
 @media (max-width: 1050px) {
-  .Process-pfm{
-    padding: 42px 0 70  px;
+  .Process-pfm {
+    padding: 42px 0 70 px;
   }
-  .Process-pfm .heading2{
+  .Process-pfm .heading2 {
     margin-top: 71px;
     font-size: 35px;
-    line-height:45px;
+    line-height: 45px;
   }
 
   .Process-pfm .sub-content {
@@ -395,10 +417,10 @@
     align-items: center;
     gap: 101px;
   }
-  .Process-pfm .subParagraph1{
+  .Process-pfm .subParagraph1 {
     margin-top: 23px;
   }
-  .Process-pfm .listItem{
+  .Process-pfm .listItem {
     margin-bottom: 31px;
   }
 }
@@ -406,10 +428,12 @@
 /* Resorce-hub */
 /* resourceHub-headline */
 
-@media (max-width: 450px) {
+@media (max-width: 575px) {
+  .resourceHub-headline {
+    padding: 71px 0;
+  }
   .resourceHub-headline .headline-content {
-    padding-top: 71px;
-    padding-bottom: 71px;
+    line-height: 50px;
     font-size: 40px;
   }
 }
@@ -428,15 +452,234 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .case-Studies {
+    padding-bottom: 98px;
+  }
   .case-Studies .case-grid {
+    margin-top: 50px;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 44px;
   }
+  .case-Studies .cardImg {
+    height: 280px;
+  }
+  .case-Studies .card-text {
+    padding: 24px 27px 28px;
+  }
+  .case-Studies .case-type {
+    font-size: 14px;
+  }
+  .case-Studies .case-summary {
+    font-size: 22px;
+    margin-top: 17px;
+    line-height: 30px;
+  }
+
+  .case-Studies .case-btn img {
+    margin-top: 17px;
+    height: 38px;
+    width: 38px;
+  }
   .case-Studies .lodeMore-btn {
     margin-top: 44px;
-    margin-bottom: 44px;
   }
 }
 
 /* cs-open */
+/* .csOpen-headline */
+
+@media (max-width: 575px) {
+  .csOpen-headline {
+    padding: 63px 0 83px;
+  }
+  .csOpen-headline .heading2 {
+    font-size: 40px;
+    line-height: 55px;
+    margin-top: 28px;
+  }
+}
+
+/* .csOpen-swiper */
+@media (max-width: 575px) {
+  .csOpen-swiper .swiper-pagination {
+    margin-bottom: 20px;
+  }
+  .csOpen-swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .csOpen-swiper .swiper-slide img {
+    height: 420px;
+  }
+}
+
+/* .csOpen-aboutProject */
+
+@media (max-width: 575px) {
+  .csOpen-aboutProject {
+    padding: 99px 0 100px;
+  }
+  .csOpen-aboutProject .text-heading {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .csOpen-aboutProject .text-desc {
+    margin-top: 50px;
+  }
+  .csOpen-aboutProject .subHeading-text {
+    line-height: 22px;
+  }
+}
+@media (max-width: 1199px) {
+  .csOpen-aboutProject .aboutProject-content {
+    flex-direction: column;
+    gap: 74px;
+  }
+}
+
+/* csOpen-ourSolution */
+
+@media (max-width: 575px) {
+  .csOpen-ourSolution {
+    padding: 100px 0;
+    background-color: #eceded;
+  }
+
+  .csOpen-ourSolution .content-subHeading {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .csOpen-ourSolution .paragraph1 {
+    margin-top: 50px;
+  }
+  .csOpen-ourSolution .btn1 {
+    margin-top: 43px;
+  }
+}
+
+/* csOpen-clientTestimonial */
+
+@media (max-width: 991px) {
+  .csOpen-clientTestimonial {
+    position: static;
+    height: auto;
+  }
+
+  .csOpen-clientTestimonial .container {
+    background-color: var(--blue);
+  }
+
+  .csOpen-clientTestimonial .left {
+    position: static;
+    width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  .csOpen-clientTestimonial .right {
+    position: static;
+    width: 100%;
+    padding: 42px 0 229px;
+  }
+  .csOpen-clientTestimonial .paragraph1 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #f8f8f8;
+  }
+}
+
+/* csOpen-caseStudies */
+
+@media (max-width: 1199px) {
+  .csOpen-caseStudies {
+    padding: 116px 0 100px;
+  }
+  .csOpen-caseStudies .case-grid {
+    margin-top: 66px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .csOpen-caseStudies .case-grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+  }
+
+  .csOpen-caseStudies .cardImg {
+    height: 280px;
+  }
+
+  .csOpen-caseStudies .card-text {
+    padding: 23px 20px 28px 28px;
+  }
+  .csOpen-caseStudies .case-type {
+    font-size: 14px;
+  }
+
+  .csOpen-caseStudies .case-summary {
+    margin-top: 17px;
+  }
+
+  .csOpen-caseStudies .case-btn {
+    margin-top: 17px;
+  }
+  .csOpen-caseStudies .case-btn img {
+    height: 38px;
+    width: 38px;
+  }
+}
+
+/* FAQ's */
+
+/* faq-heroseciton */
+
+@media (max-width:575px) {
+  .faq-heroSection{
+    padding: 105px 0 51px;
+  }
+  .faq-heroSection .heading1{
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+  }
+  .faq-heroSection .paragraph1{
+    margin-top: 44px;
+  }
+  .faq-heroSection .search-block{
+    margin-top: 51px;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  .faq-heroSection .searchBtn{
+    width: 100%;
+    justify-content: center;
+  }
+  .faq-heroSection .accordion{
+    margin-top: 83px;
+    border-top: 1px solid rgba(112, 112, 112, .15);
+  }
+  .faq-heroSection label{
+    font-size: 22px;
+    line-height: 30px;
+    padding: 22px 0;
+  }
+  .faq-heroSection input[type='radio']:checked + label + .content{
+    padding:15px 0 23px;
+  }
+}
+
+/* faq-gitSection */
+@media (max-width:575px) {
+  .faq-gitSection{
+    padding: 80px 0 145px;
+  }
+  .faq-gitSection .contentQue{
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
