@@ -37,7 +37,7 @@ Files
 | c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\images\icons\Path 12155.svg  | XML        |          3 |          0 |          1 |          4 |
 | c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\images\icons\White-arrow.svg | XML        |          3 |          0 |          1 |          4 |
 | c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\assests\js\main.js                   | JavaScript |          0 |          0 |          1 |          1 |
-| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\cs-open.html                         | HTML       |         60 |          0 |          3 |         63 |
+| c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\csOpen.html                         | HTML       |         60 |          0 |          3 |         63 |
 | c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\index.html                           | HTML       |        272 |          0 |          7 |        279 |
 | c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\process.html                         | HTML       |        301 |          0 |          8 |        309 |
 | c:\Users\Om Bhanderi\OneDrive\Desktop\Internship\McLaw\resourceHub.html                     | HTML       |        185 |          0 |          4 |        189 |

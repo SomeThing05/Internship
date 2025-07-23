@@ -39,7 +39,7 @@ img {
 /* nav-bar */
 
 .navbar {
-  padding:26px 0px;
+  padding: 26px 0px;
   top: 0;
   position: sticky;
   z-index: 10;
@@ -1301,7 +1301,7 @@ img {
   letter-spacing: 2px;
 }
 
-/* cs-open */
+/* csOpen */
 
 /* .csOpen-headline */
 
@@ -1605,20 +1605,19 @@ img {
   width: 46px;
 }
 
-
 /* FAQ's  */
 /* faq-heroSection */
-.faq-heroSection{
+.faq-heroSection {
   background-color: rgba(248, 248, 248, 1);
   padding: 166px 0 142px;
 }
 
-.faq-heroSection .heroSection-content{
+.faq-heroSection .heroSection-content {
   margin: 0 auto;
   max-width: 850px;
 }
 
-.faq-heroSection .heading1{
+.faq-heroSection .heading1 {
   font-family: var(--font-Maison);
   font-weight: 300;
   font-size: 45px;
@@ -1627,7 +1626,7 @@ img {
   text-align: center;
 }
 
-.faq-heroSection .paragraph1{
+.faq-heroSection .paragraph1 {
   margin-top: 60px;
   font-family: var(--font-Maison);
   font-weight: 300;
@@ -1636,16 +1635,15 @@ img {
   color: var(--blue);
   opacity: 75%;
 }
-.faq-heroSection .search-block{
+.faq-heroSection .search-block {
   margin-top: 60px;
   display: flex;
   justify-content: center;
   gap: 6px;
   align-items: center;
-  
 }
 
-.faq-heroSection .searchbar{
+.faq-heroSection .searchbar {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -1656,11 +1654,11 @@ img {
   height: 48px;
 }
 
-.faq-heroSection .searchbar::placeholder{
+.faq-heroSection .searchbar::placeholder {
   color: #717171;
 }
 
-.faq-heroSection .searchBtn{
+.faq-heroSection .searchBtn {
   font-family: var(--font-demi);
   font-weight: normal;
   font-size: 14px;
@@ -1669,20 +1667,19 @@ img {
   height: 100%;
   padding: 0 21px;
   display: flex;
-  align-items: center;;
-  border: 1px solid #F8F8F8;
-  background-color: #1C2645;
+  align-items: center;
+  border: 1px solid #f8f8f8;
+  background-color: #1c2645;
   border-radius: 30px;
-  height: 48px;   
+  height: 48px;
 }
 
-.faq-heroSection .accordion{
+.faq-heroSection .accordion {
   margin-top: 77px;
 }
 
 .faq-heroSection .accordion-item {
-  border-bottom: 1px solid rgba(112, 112, 112, .15);
-  
+  border-bottom: 1px solid rgba(112, 112, 112, 0.15);
 }
 .faq-heroSection input[type='radio'] {
   display: none;
@@ -1715,7 +1712,6 @@ img {
   transform: rotate(180deg);
   width: 13.63px;
   height: 18.66px;
-
 }
 
 .faq-heroSection input[type='radio']:checked + label .arrow {
@@ -1739,10 +1735,10 @@ img {
 
 /* faq-gitSection */
 .faq-gitSection {
-  padding: 121px 0 ;
-  background-color: #ECEDED;
+  padding: 121px 0;
+  background-color: #eceded;
 }
-.faq-gitSection .contentQue{
+.faq-gitSection .contentQue {
   font-family: var(--font-Maison);
   font-weight: 300;
   font-size: 45px;
@@ -1751,7 +1747,7 @@ img {
   max-width: 576px;
 }
 
-.faq-gitSection .gitBtn{
+.faq-gitSection .gitBtn {
   font-family: var(--font-demi);
   font-weight: normal;
   color: #fff;
@@ -1764,17 +1760,280 @@ img {
   margin-top: 22px;
 }
 
-
 /* GIT */
-
-.git-heroSection{
+/* hero-section */
+.git-heroSection {
   padding: 104px 0;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
-.git-heroSection .heroSection-text{
+.git-heroSection .heroSection-text {
   font-family: var(--font-Maison);
   font-weight: 300;
   font-size: 45px;
   line-height: 55px;
+}
+
+/* contact-section */
+
+.contact-section {
+  background-color: #f8f8f8;
+}
+
+.contact-section .content-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-section .contactDetails {
+  max-width: 152px;
+}
+.contact-section .heading1,
+.contact-section .heading2 {
+  font-family: var(--font-neueHass);
+  font-weight: 500;
+  color: var(--blue);
+  font-size: 14px;
+  letter-spacing: 0.28px;
+}
+
+.contact-section .moNo {
+  margin-top: 54px;
+  font-family: var(--font-Maison);
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--blue);
+}
+
+.contact-section .add {
+  margin-top: 28px;
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--blue);
+  line-height: 20px;
+}
+
+.contact-section .direction-link {
+  margin-top: 10px;
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 10px;
+  color: #707070;
+}
+
+.contact-section .linkedIn-link {
+  margin-top: 15px;
+  display: block;
+  height: 46px;
+  width: 46px;
+  border: 1px solid #ebebeb;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .linkedIn-link img {
+  height: 20px;
+  width: 20px;
+}
+.contact-section .contactForm {
+  max-width: 800px;
+  width: 100%;
+  margin-left: 130px;
+}
+
+.contact-section .form-grid {
+  width: 100%;
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 9px;
+  column-gap: 24px;
+}
+
+/* First row */
+.contact-section .name {
+  grid-column: 1;
+}
+.contact-section .email {
+  grid-column: 2;
+}
+
+/* Second row */
+.contact-section .number {
+  grid-column: 1;
+}
+.contact-section input[type='number']::-webkit-outer-spin-button,
+.contact-section input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact-section .subject {
+  grid-column: 2;
+}
+
+/* Third row */
+.contact-section .message {
+  grid-column: 1 / span 2; /* span both columns */
+  height: 100px;
+}
+
+.contact-section .form-grid input,
+.contact-section .form-grid select {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #efefef;
+  border-radius: 30px;
+  background-color: #ffffff;
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 14px;
+  color: #707070;
+  padding-left: 30px;
+}
+
+.contact-section .form-grid textarea {
+  width: 100%;
+  border: 1px solid #efefef;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  font-size: 14px;
+  color: #707070;
+  padding-left: 30px;
+  padding-top: 16px;
+}
+
+/* office-section  */
+
+.office-section {
+  background-color: #f8f8f8;
+  padding: 133px 0 143px;
+}
+
+.office-section .office-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 75px;
+}
+
+.office-section .card {
+  border: 1px solid #efefef;
+  border-left-color: #efefef;
+}
+.office-section .cardImg {
+  aspect-ratio: 1/0.6;
+}
+.office-section .card-text {
+  padding: 54px 20px 44px 40px;
+}
+
+.office-section .office-city {
+  font-family: var(--font-Maison);
+  font-weight: 300;
+  color: var(--blue);
+  opacity: 75%;
+  font-size: 16px;
+}
+.office-section .office-add {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
+  color: var(--blue);
+  font-size: 26px;
+  line-height: 34px;
+  max-width: 390px;
+  margin-top: 24px;
+}
+
+.office-section .office-btn {
+  margin-top: 24px;
+  aspect-ratio: 1/1;
+}
+
+/* privacy */
+
+/* privacy-herosection */
+
+.privacy-heroSection {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.privacy-heroSection .hero-layout {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.privacy-heroSection .sidebar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+  width: 100%;
+  max-width: 230px;
+  max-height: fit-content;
+  position: sticky;
+  top: 199px;
+  white-space: nowrap;
+}
+.privacy-heroSection button {
+  all: unset;
+  cursor: pointer;
+}
+
+.privacy-heroSection .nav-link {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
+  font-size: 20px;
+  color: #707070;
+  transition: all 0.4s ease-in-out;
+}
+
+.privacy-heroSection button.active {
+  color: #1f2133;
+  font-size: 24px;
+  padding-left: 10px;
+  border-left: 1px solid #1c2645;
+}
+
+.privacy-heroSection .content {
+  max-width: 850px;
+}
+
+.privacy-heroSection .heading1,
+.privacy-heroSection .heading2 {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
+  font-size: 45px;
+  color: var(--blue);
+}
+
+.privacy-heroSection .heading2 {
+  font-size: 30px;
+}
+
+.privacy-heroSection .content-section:last-child {
+  margin-top: 83px;
+}
+
+.privacy-heroSection .paragraph1,
+.privacy-heroSection .paragraph2 {
+  font-family: var(--font-MaisonBook);
+  font-weight: normal;
+  font-size: 16px;
+  color: #707070;
+  line-height: 26px;
+  opacity: 74%;
+}
+
+.privacy-heroSection .paragraph1 {
+  margin-top: 26px;
+}
+
+.privacy-heroSection .paragraph2 {
+  margin-top: 15px;
 }

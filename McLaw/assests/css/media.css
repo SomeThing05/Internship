@@ -486,7 +486,7 @@
   }
 }
 
-/* cs-open */
+/* csOpen */
 /* .csOpen-headline */
 
 @media (max-width: 575px) {
@@ -638,48 +638,140 @@
 
 /* faq-heroseciton */
 
-@media (max-width:575px) {
-  .faq-heroSection{
+@media (max-width: 575px) {
+  .faq-heroSection {
     padding: 105px 0 51px;
   }
-  .faq-heroSection .heading1{
+  .faq-heroSection .heading1 {
     font-size: 40px;
     line-height: 50px;
     text-align: left;
   }
-  .faq-heroSection .paragraph1{
+  .faq-heroSection .paragraph1 {
     margin-top: 44px;
   }
-  .faq-heroSection .search-block{
+  .faq-heroSection .search-block {
     margin-top: 51px;
     flex-direction: column;
     row-gap: 4px;
   }
-  .faq-heroSection .searchBtn{
+  .faq-heroSection .searchBtn {
     width: 100%;
     justify-content: center;
   }
-  .faq-heroSection .accordion{
+  .faq-heroSection .accordion {
     margin-top: 83px;
-    border-top: 1px solid rgba(112, 112, 112, .15);
+    border-top: 1px solid rgba(112, 112, 112, 0.15);
   }
-  .faq-heroSection label{
+  .faq-heroSection label {
     font-size: 22px;
     line-height: 30px;
     padding: 22px 0;
   }
-  .faq-heroSection input[type='radio']:checked + label + .content{
-    padding:15px 0 23px;
+  .faq-heroSection input[type='radio']:checked + label + .content {
+    padding: 15px 0 23px;
   }
 }
 
 /* faq-gitSection */
-@media (max-width:575px) {
-  .faq-gitSection{
+@media (max-width: 575px) {
+  .faq-gitSection {
     padding: 80px 0 145px;
   }
-  .faq-gitSection .contentQue{
+  .faq-gitSection .contentQue {
     font-size: 35px;
     line-height: 45px;
+  }
+}
+
+/* contact  */
+
+/* hero section */
+
+@media (max-width: 575px) {
+  .git-heroSection {
+    padding: 113px 0 80px;
+  }
+  .git-heroSection .heroSection-text {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+/* contact-section */
+@media (max-width: 767px) {
+  .contact-section .content-block {
+    flex-direction: column;
+    gap: 55px;
+  }
+  .contact-section .linkedIn-link {
+    margin-top: 28px;
+  }
+  .contact-section .contactForm {
+    margin-left: 0px;
+  }
+
+  .contact-section .form-grid {
+    margin-top: 38px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-section .email {
+    grid-column: 1;
+  }
+  .contact-section .subject {
+    grid-column: 1;
+  }
+  .contact-section .message {
+    grid-column: 1;
+  }
+}
+
+/* office-section */
+@media (max-width: 575px) {
+  .office-section {
+    padding: 83px 0 160px;
+  }
+  .office-section .office-grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+  }
+  .office-section .card-text {
+    padding: 23px 20px 25px 25px;
+  }
+
+  .office-section .office-city {
+    font-size: 14px;
+  }
+
+  .office-section .office-add {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .privacy-heroSection {
+    padding: 75px 0 140px;
+  }
+  .privacy-heroSection .hero-layout {
+    flex-direction: column;
+    gap: 75px;
+  }
+  .privacy-heroSection .sidebar {
+    position: unset;
+  }
+
+  .privacy-heroSection .heading1 {
+    font-size: 40px;
+  }
+
+  .privacy-heroSection .paragraph1,
+  .privacy-heroSection .paragraph2 {
+    margin-top: 44px;
+  }
+
+  .privacy-heroSection .content-section:last-child {
+    margin-top: 68px;
   }
 }
