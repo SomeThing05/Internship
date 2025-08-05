@@ -1,0 +1,92 @@
+/* navbar */
+@media (max-width: 1199px) {
+  .main-navbar {
+    background-color: #edede5;
+  }
+  .main-navbar .main-logo {
+    display: none;
+  }
+
+  .main-navbar .respo-mainLogo {
+    display: block;
+  }
+  .main-navbar .hameburger {
+    display: block;
+  }
+  .main-navbar .nav-links {
+    flex-direction: column;
+  }
+
+  .main-navbar ul li:nth-last-child(2) {
+    background: none;
+    padding: 0;
+  }
+
+  .main-navbar .nav-links.active {
+    display: flex;
+    margin-left: unset;
+  }
+}
+
+@media (max-width: 575px) {
+  .top-navbar {
+    display: none;
+  }
+  .main-navbar .respo-mainLogo {
+    width: 196px;
+    height: 32px;
+  }
+  .main-navbar .nav-links.active {
+    top: 113px;
+  }
+
+  .main-navbar ul li:last-child {
+    display: block;
+  }
+}
+
+/* hero-section */
+@media (max-width: 1199px) {
+  .home-hero-section .hero-image {
+    top: 155px;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-hero-section {
+    background-color: #edede5;
+    padding: 0;
+    padding-top: 85px;
+    color: #000000;
+  }
+  .home-hero-section .hero-paragraph {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .home-hero-section .hero-btn {
+    margin-top: 28px;
+  }
+  .home-hero-section .hero-btn {
+    flex-direction: column;
+    gap: 16px;
+    color: var(--primary-color);
+    align-items: start;
+  }
+  .home-hero-section .hero-btn a:nth-child(2) {
+    padding: 18px 50px;
+    background-color: rgb(237, 108, 79);
+    transform: skew(-10deg);
+  }
+  .home-hero-section .hero-btn a:nth-child(2):hover{
+    background-color: rgb(213, 97, 71);
+  }
+  .home-hero-section .hero-image {
+    margin-top: 53px;
+    position: static;
+    aspect-ratio: 1/1;
+    width:calc(100% + 40px);
+    margin-left: -20px;
+  }
+}
