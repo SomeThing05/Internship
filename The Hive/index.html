@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <nav class="nav-bar">
@@ -32,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="main-navbar">
+      <div class="main-navbar" id="main-navbar">
         <div class="container">
           <div class="navbar-content">
             <a href="#" class="main-logo">
@@ -60,7 +61,7 @@
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="black"
-                stroke-width="2"
+                stroke-width="1"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
@@ -80,7 +81,12 @@
       <div class="container">
         <div class="hero-content">
           <h2 class="hero-heading">WELCOME TO THE HIVE</h2>
-          <p class="hero-paragraph"><span style="font-weight: 600;">Transforming</span> working cultures to <span style="font-weight: 600;">deliver results</span> that matter</p>
+          <p class="hero-paragraph">
+            <span style="font-weight: 600">Transforming</span>
+            working cultures to
+            <span style="font-weight: 600">deliver results</span>
+            that matter
+          </p>
           <div class="hero-btn">
             <a href="#">WHAT WE DO</a>
             <a href="#">WHAT WE DO</a>
@@ -91,6 +97,111 @@
         </div>
       </div>
     </section>
+
+    <section class="home-whoWeAre">
+      <div class="container">
+        <div class="who-we-are">
+          <h2 class="who-we-are-heading">WHO WE ARE</h2>
+          <h3 class="who-we-are-subHeading">
+            Has your transformation journey
+            <span style="font-weight: 600">lost clarity?</span>
+          </h3>
+          <p class="who-we-are-text">
+            At The Hive, our clients rely on us to guide them through change in culture and performance using our 3 step
+            process grounded in empathy, collaboration and purposeful leadership.
+          </p>
+          <a href="#" class="read-more-btn">READ MORE</a>
+        </div>
+      </div>
+
+      <div class="what-we-do">
+        <div class="what-we-do-header">
+          <h2 class="what-we-do-heading">What we do</h2>
+          <a href="#" class="view-all-btn">VIEW ALL</a>
+        </div>
+        <div class="what-we-do-grid">
+          <div class="what-we-do-card">
+            <div class="card-img">
+              <img src="./assets/images/section/home_whatWeDo2.png" alt="image" />
+            </div>
+            <div class="grid-content">
+              <p class="grid-text">Problem Solving</p>
+              <a href="#" class="grid-btn"><img src="./assets/images/icons/home_whatWeDoArrow.png" alt="arrow" /></a>
+            </div>
+          </div>
+          <div class="what-we-do-card">
+            <div class="card-img">
+              <img src="./assets/images/section/home_whatWeDo2.png" alt="image" />
+            </div>
+            <div class="grid-content">
+              <p class="grid-text">Communication</p>
+              <a href="#" class="grid-btn"><img src="./assets/images/icons/home_whatWeDoArrow.png" alt="arrow" /></a>
+            </div>
+          </div>
+          <div class="what-we-do-card">
+            <div class="card-img">
+              <img src="./assets/images/section/home_whatWeDo2.png" alt="image" />
+            </div>
+            <div class="grid-content">
+              <p class="grid-text">Leadership</p>
+              <a href="#" class="grid-btn"><img src="./assets/images/icons/home_whatWeDoArrow.png" alt="arrow" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-aboutSection">
+      <div class="container">
+        <div class="reviews">
+          <h2 class="reviews-heading">WHAT OTHERS SAY ABOUT US</h2>
+          <div class="reviews-slide">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p class="slide-text">
+                    “This is by far the best training I’ve ever had. We are now speaking one common language across
+                    teams.”
+                  </p>
+                  <p class="slide-footer">Jenny Holland, Regional Sales Manager</p>
+                </div>
+                <div class="swiper-slide">
+                  <p class="slide-text">
+                    “This is by far the best training I’ve ever had. We are now speaking one common language across
+                    teams.”
+                  </p>
+                  <p class="slide-footer">Jenny Holland, Regional Sales Manager</p>
+                </div>
+                <div class="swiper-slide">
+                  <p class="slide-text">
+                    “This is by far the best training I’ve ever had. We are now speaking one common language across
+                    teams.”
+                  </p>
+                  <p class="slide-footer">Jenny Holland, Regional Sales Manager</p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        //   loop: true,
+        //   autoplay: {
+        //     delay: 2000, // Delay between slides (ms)
+        //     disableOnInteraction: false,
+        //     pauseOnMouseEnter: true, // Keep autoplay after interaction
+        //   },
+      });
+    </script>
   </body>
 </html>

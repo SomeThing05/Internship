@@ -36,7 +36,7 @@ li {
 
 /* navbar */
 /* top navbar */
-.nav-bar{
+.nav-bar {
   position: sticky;
   top: 0;
   z-index: 999;
@@ -97,6 +97,7 @@ li {
 
 .main-navbar {
   padding: 30px 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .main-navbar .main-logo {
@@ -112,6 +113,7 @@ li {
 .main-navbar .navbar-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: var(--font-libre);
   font-weight: 500;
   font-size: 13px;
@@ -136,42 +138,18 @@ li {
 .main-navbar ul li:last-child {
   display: none;
 }
-
-.main-navbar .nav-links {
-  flex-direction: column;
-  align-items: start;
-  padding-left: 20px;
-  width: 100%;
-
-  height: 100vh;
-  position: absolute;
-  top: 153px;
-  left: -100%;
-  visibility: hidden;
-  background-color: #edede5;
-  color: #000b18;
-  padding-bottom: 15px;
-  font-size: 25px;
-  gap: 50px;
-  padding-top: 30px;
-  transition:all 500ms ease-in-out ;
-  opacity: 0;
-}
-
-.main-navbar .nav-links.active{
-  visibility: visible;
-  left: 0;
-  opacity: 1;
-}
-
 .main-navbar .respo-mainLogo {
   display: none;
   width: 250px;
   height: 40px;
 }
+.main-navbar .respo-mainLogo img {
+  object-fit: contain;
+}
 
 .main-navbar .hameburger {
   display: none;
+  cursor: pointer;
 }
 
 /* hero-section */
@@ -209,19 +187,213 @@ li {
   background-color: rgb(237, 108, 79);
   transform: skew(-10deg);
 }
-.home-hero-section .hero-btn a:first-child:hover{
+.home-hero-section .hero-btn a:first-child:hover {
   background-color: rgb(213, 97, 71);
 }
-.home-hero-section .hero-btn a:nth-child(2):hover{
-  color: #e0e0e0
+.home-hero-section .hero-btn a:nth-child(2):hover {
+  color: #e0e0e0;
 }
 
 .home-hero-section .hero-image {
   position: fixed;
   z-index: -1;
-  aspect-ratio: 1/0.54;
+  height: 100vh;
   top: 5px;
   left: 0;
   width: 100%;
   filter: brightness(85%);
+}
+
+/* home-whoWeAre section */
+.home-whoWeAre {
+  background-color: #ed6c4f;
+  padding-top: 140px;
+}
+.home-whoWeAre .who-we-are {
+  font-family: var(--font-libre);
+  color: var(--primary-color);
+  margin-left: 134px;
+}
+
+.home-whoWeAre .who-we-are-heading {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.home-whoWeAre .who-we-are-subHeading {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+  max-width: 565px;
+  margin-top: 10px;
+}
+.home-whoWeAre .who-we-are-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 18px;
+  max-width: 632px;
+}
+
+.home-whoWeAre .read-more-btn {
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: rgb(4, 60, 57);
+  padding: 18px 50px;
+  transform: skew(-8deg);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.home-whoWeAre .read-more-btn:hover {
+  background-color: rgb(6, 75, 70);
+}
+
+.home-whoWeAre .what-we-do {
+  max-width: 1130px;
+  font-family: var(--font-libre);
+  color: var(--primary-color);
+  margin: 0 auto;
+  margin-bottom: -160px;
+  padding: 0 20px;
+  padding-top: 204px;
+}
+
+.home-whoWeAre .what-we-do-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-whoWeAre .what-we-do-heading {
+  font-size: 40px;
+  font-weight: 300;
+}
+.home-whoWeAre .view-all-btn {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2;
+  letter-spacing: 2px;
+  background-color: rgb(4, 60, 57);
+  padding: 18px 50px;
+  transform: skew(-8deg);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.home-whoWeAre .view-all-btn:hover {
+  background-color: rgb(6, 75, 70);
+}
+
+.home-whoWeAre .what-we-do-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  margin-top: 27px;
+}
+
+.home-whoWeAre .what-we-do-card {
+  font-family: var(--font-libre);
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+.home-whoWeAre .grid-content {
+  padding-left: 30px;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 30%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.2) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
+}
+
+.home-whoWeAre .grid-btn {
+  margin-top: 10px;
+}
+
+.home-whoWeAre .what-we-do-card:hover .grid-content {
+  visibility: unset;
+  opacity: 1;
+  bottom: 0;
+}
+
+/* home-aboutSection */
+.home-aboutSection {
+  background-color: rgb(4, 60, 57);
+  padding-top: 333px;
+}
+
+.home-aboutSection .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-libre);
+  color: var(--primary-color);
+}
+
+.home-aboutSection .reviews-heading {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.home-aboutSection .slide-text {
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 59px;
+  font-style: italic;
+}
+
+.home-aboutSection .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.home-aboutSection .reviews-slide {
+  max-width: 870px;
+}
+
+.home-aboutSection .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(4, 60, 57);
+  margin-top: 24px;
+  padding-bottom: 50px;
+}
+
+.home-aboutSection .slide-footer {
+  margin-top: 17px;
+}
+
+.home-aboutSection .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-aboutSection span.swiper-pagination-bullet {
+  height: 2px;
+  width: 17px;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+  opacity: 36%;
+}
+
+.home-aboutSection span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  height: 2px;
+  width: 36px;
+  opacity: 100%;
 }
