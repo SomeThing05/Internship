@@ -257,7 +257,7 @@ li {
   margin: 0 auto;
   margin-bottom: -160px;
   padding: 0 20px;
-  padding-top: 204px;
+  margin-top: 204px;
 }
 
 .home-whoWeAre .what-we-do-header {
@@ -300,6 +300,10 @@ li {
   position: relative;
   overflow: hidden;
 }
+
+.home-whoWeAre .card-img{
+  filter: brightness(80%);
+}
 .home-whoWeAre .grid-content {
   padding-left: 30px;
   padding-bottom: 20px;
@@ -308,7 +312,7 @@ li {
   bottom: -100%;
   visibility: hidden;
   opacity: 0;
-  transition: all 1s ease-in-out;
+  transition: all .7s ease-in-out;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.9) 0%,
@@ -334,6 +338,7 @@ li {
 .home-aboutSection {
   background-color: rgb(4, 60, 57);
   padding-top: 333px;
+  padding-bottom: 220px;
 }
 
 .home-aboutSection .reviews {
@@ -346,7 +351,7 @@ li {
 
 .home-aboutSection .reviews-heading {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 500; 
   letter-spacing: 3px;
 }
 .home-aboutSection .slide-text {
@@ -363,6 +368,7 @@ li {
 
 .home-aboutSection .reviews-slide {
   max-width: 870px;
+  width: 100%;
 }
 
 .home-aboutSection .swiper-slide {
@@ -375,6 +381,8 @@ li {
 
 .home-aboutSection .slide-footer {
   margin-top: 17px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .home-aboutSection .swiper-slide img {
@@ -396,4 +404,68 @@ li {
   height: 2px;
   width: 36px;
   opacity: 100%;
+}
+
+
+.home-aboutSection .process{
+  margin-top: 190px;
+  font-family: var(--font-libre);
+  color: #EDEDE6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-aboutSection .process-heading{
+  font-size: 40px;
+  font-weight: 300;
+}
+.home-aboutSection .process-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  max-width: 980px;
+  margin-top: 55px;
+  column-gap: 100px;
+}
+
+.home-aboutSection .process-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.home-aboutSection .process-card-img{
+  height: 260px;
+  width: 260px;
+  border-radius: 100%;
+  padding: 40px;
+  box-shadow: 0 0 36px #021F1E;
+}
+
+.home-aboutSection .process-card-img img{
+  object-fit: contain;
+}
+
+.home-aboutSection .process-card-heading{
+  margin-top: 25px;
+}
+
+.home-aboutSection .process-card-text{
+  margin-top: 10px;
+}
+
+.home-aboutSection .process-card-heading{
+  font-size: 30px;
+  font-weight: 700;
+  color: #EDEDE6;
+}
+
+.home-aboutSection .process-card-text{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 300;
+  color: var(--primary-color);
+  max-width:185px;
 }

@@ -121,11 +121,114 @@
   .home-hero-section .hero-image {
     margin-top: 53px;
     position: static;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
     width: calc(100% + 40px);
     margin-left: -20px;
+    overflow: hidden;
+    display: block;
+    height: auto;
   }
   .home-hero-section .hero-image img {
     object-position: right;
   }
 }
+
+@media(max-width:576px){
+  .home-hero-section .hero-image{
+    aspect-ratio: 1/1;
+  }
+}
+
+/* home-whoWeAre */
+
+@media (max-width: 992px) {
+  .home-whoWeAre{
+    padding-bottom: 50px;
+    padding-top: 74px;
+  }
+  .home-whoWeAre .what-we-do {
+    margin-bottom: 0;
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-whoWeAre .who-we-are {
+    margin-left: 0;
+  }
+
+  .home-whoWeAre .what-we-do-grid {
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 10px;
+  }
+  .home-whoWeAre .what-we-do-grid{
+    max-width: 500px;
+    margin: 0 auto; 
+    margin-top: 27px;
+  }
+
+}
+
+@media(max-width:576px){
+  .home-whoWeAre {
+    padding-bottom: 0;
+  }
+  .home-whoWeAre .who-we-are-subHeading{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  .home-whoWeAre .view-all-btn{
+    display: none;
+  }
+
+  .home-whoWeAre .what-we-do-grid{
+    max-width: unset;
+    grid-template-columns: repeat(1,1fr);
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    background-color: #EDEDE5;
+  }
+  .home-whoWeAre .what-we-do-card {
+    font-size: 30px;
+  }
+  .home-whoWeAre .grid-btn {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* home-aboutSecstion */
+@media(max-width:1000px){
+  .home-aboutSection .process-grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+  }
+
+  .home-aboutSection .process-card:last-child{
+    grid-row: 2;
+    justify-self: center;
+  }
+}
+@media (max-width:992px){
+  .home-aboutSection{
+    padding-top: 85px; 
+  }
+}
+
+@media (max-width:768px){
+  .home-aboutSection .reviews-heading{
+    font-size: 14px;
+  }
+  .home-aboutSection .slide-text{
+    font-size: 33px;
+    line-height: 50px;
+  }
+
+  .home-aboutSection .slide-footer{
+    font-size: 14px;
+    margin-top: 43px;
+  }
+}
+
+
